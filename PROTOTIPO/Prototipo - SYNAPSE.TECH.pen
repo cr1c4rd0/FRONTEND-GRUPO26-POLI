@@ -10759,6 +10759,1730 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "XQNgG",
+      "x": 0,
+      "y": 3584,
+      "name": "Flujo de Interacciones - SYNAPSE.TECH",
+      "width": 1650,
+      "height": 1050,
+      "fill": "#F8FAFC",
+      "cornerRadius": 16,
+      "stroke": "#E2E8F0",
+      "strokeWidth": 1,
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "DUDV4",
+          "x": 60,
+          "y": 36,
+          "name": "Title",
+          "fill": "#0F172A",
+          "content": "Diagrama de Flujo — Interacciones del Prototipo",
+          "fontFamily": "Inter",
+          "fontSize": 26,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "dW8Q2",
+          "x": 60,
+          "y": 74,
+          "name": "Subtitle",
+          "fill": "#64748B",
+          "content": "SYNAPSE.TECH — flujo de navegación entre pantallas del prototipo",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "CMRhW",
+          "x": 60,
+          "y": 460,
+          "name": "Home",
+          "width": 220,
+          "height": 64,
+          "fill": "#DBEAFE",
+          "cornerRadius": 10,
+          "stroke": "#3B82F6",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "iyye7",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Home",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qy0H7",
+          "x": 360,
+          "y": 140,
+          "name": "News Detail",
+          "width": 220,
+          "height": 64,
+          "fill": "#EEF2FF",
+          "cornerRadius": 10,
+          "stroke": "#6366F1",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FHgaG",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "News Detail",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sz2lq",
+          "x": 360,
+          "y": 460,
+          "name": "Favorites Page",
+          "width": 220,
+          "height": 64,
+          "fill": "#EEF2FF",
+          "cornerRadius": 10,
+          "stroke": "#6366F1",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "kDl7y",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Favorites Page",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xFwTq",
+          "x": 360,
+          "y": 780,
+          "name": "Profile",
+          "width": 220,
+          "height": 64,
+          "fill": "#EEF2FF",
+          "cornerRadius": 10,
+          "stroke": "#6366F1",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BsLOF",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Profile",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z9eEO3",
+          "x": 660,
+          "y": 140,
+          "name": "Contact",
+          "width": 220,
+          "height": 64,
+          "fill": "#EEF2FF",
+          "cornerRadius": 10,
+          "stroke": "#6366F1",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wSCSI",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Contact",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MCSfP",
+          "x": 660,
+          "y": 300,
+          "name": "Contacto - Validación",
+          "width": 220,
+          "height": 64,
+          "fill": "#FEF2F2",
+          "cornerRadius": 10,
+          "stroke": "#EF4444",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VMlJL",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Contacto - Validación",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m7nGK",
+          "x": 960,
+          "y": 140,
+          "name": "Contacto - Enviado",
+          "width": 220,
+          "height": 64,
+          "fill": "#F0FDF4",
+          "cornerRadius": 10,
+          "stroke": "#22C55E",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hBV0x",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Contacto - Enviado",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sDzj2",
+          "x": 660,
+          "y": 780,
+          "name": "Admin Noticias",
+          "width": 220,
+          "height": 64,
+          "fill": "#FFFBEB",
+          "cornerRadius": 10,
+          "stroke": "#F59E0B",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "L5EZDV",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Admin Noticias",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bPOzj",
+          "x": 960,
+          "y": 620,
+          "name": "Admin Noticias - Nueva",
+          "width": 220,
+          "height": 64,
+          "fill": "#FFFBEB",
+          "cornerRadius": 10,
+          "stroke": "#F59E0B",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "X3C1X",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Admin Noticias - Nueva",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R8490b",
+          "x": 1260,
+          "y": 620,
+          "name": "Admin Noticias - Nueva (Publicada)",
+          "width": 220,
+          "height": 64,
+          "fill": "#F0FDF4",
+          "cornerRadius": 10,
+          "stroke": "#22C55E",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "HX2e9",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Admin Noticias - Nueva (Publicada)",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PpPxj",
+          "x": 960,
+          "y": 780,
+          "name": "Admin Noticias - Editar (Guardada)",
+          "width": 220,
+          "height": 64,
+          "fill": "#FFFBEB",
+          "cornerRadius": 10,
+          "stroke": "#F59E0B",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nTaq3",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Admin Noticias - Editar (Guardada)",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LJpEb",
+          "x": 960,
+          "y": 940,
+          "name": "Admin Noticias - Eliminar",
+          "width": 220,
+          "height": 64,
+          "fill": "#FEF2F2",
+          "cornerRadius": 10,
+          "stroke": "#EF4444",
+          "strokeWidth": 1.5,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "XLbJg",
+              "name": "Label",
+              "fill": "#0F172A",
+              "textGrowth": "fixed-width",
+              "width": 196,
+              "content": "Admin Noticias - Eliminar",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "M5jCdm",
+          "x": 280,
+          "y": 183.64171000174397,
+          "name": "Edge Segment",
+          "geometry": "M0 308.35829l77.08957-308.35829",
+          "viewBox": [
+            0,
+            0,
+            77.08957249956399,
+            308.358289998256
+          ],
+          "width": 77.08957249956399,
+          "height": 308.358289998256,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "fazr6",
+          "x": 352.2388599988373,
+          "y": 172,
+          "name": "Arrowhead",
+          "geometry": "M7.76114 0l1.94029 12.85439-9.70143-2.42536z",
+          "viewBox": [
+            0,
+            0,
+            9.701425001453345,
+            12.854388126925642
+          ],
+          "fill": "#4F46E5",
+          "width": 9.701425001453345,
+          "height": 12.854388126925642
+        },
+        {
+          "type": "frame",
+          "id": "GAXcb",
+          "x": 225,
+          "y": 320,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "niOEE",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Ver más' en noticia",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "v9nfwV",
+          "x": 280,
+          "y": 492,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "yrP8f",
+          "x": 348,
+          "y": 487,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "wpIqY",
+          "x": 225,
+          "y": 480,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TQGtQ",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic ícono Favoritos (nav)",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "jMVF7",
+          "x": 280,
+          "y": 492,
+          "name": "Edge Segment",
+          "geometry": "M0 0l77.08957 308.35829",
+          "viewBox": [
+            0,
+            0,
+            77.08957249956399,
+            308.35828999825605
+          ],
+          "width": 77.08957249956399,
+          "height": 308.35828999825605,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "RN91T",
+          "x": 352.2388599988373,
+          "y": 799.1456118730744,
+          "name": "Arrowhead",
+          "geometry": "M7.76114 12.85439l-7.76114-10.42903 9.70143-2.42536z",
+          "viewBox": [
+            0,
+            0,
+            9.701425001453345,
+            12.854388126925642
+          ],
+          "fill": "#4F46E5",
+          "width": 9.701425001453345,
+          "height": 12.854388126925642
+        },
+        {
+          "type": "frame",
+          "id": "qJ7SI",
+          "x": 225,
+          "y": 640,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yWkXh",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic ícono Perfil (nav)",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "EEFFO",
+          "x": 580,
+          "y": 172,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "HIEMq",
+          "x": 648,
+          "y": 167,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "ASfZ9",
+          "x": 525,
+          "y": 160,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "XTF0E",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Contactar'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "QKfpc",
+          "x": 470,
+          "y": 216,
+          "name": "Edge Segment",
+          "geometry": "M0 244l0-244",
+          "viewBox": [
+            0,
+            0,
+            1,
+            244
+          ],
+          "width": 1,
+          "height": 244,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "AdzVA",
+          "x": 465,
+          "y": 204,
+          "name": "Arrowhead",
+          "geometry": "M5 0l5 12-10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            12
+          ],
+          "fill": "#4F46E5",
+          "width": 10,
+          "height": 12
+        },
+        {
+          "type": "frame",
+          "id": "ks8TV",
+          "x": 375,
+          "y": 320,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VAZqZ",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic en noticia guardada",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "Tqjho",
+          "x": 580,
+          "y": 812,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "jQAoP",
+          "x": 648,
+          "y": 807,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "a4Nbx",
+          "x": 525,
+          "y": 800,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Z3sBB",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Panel Admin'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "Ur6ku",
+          "x": 770,
+          "y": 204,
+          "name": "Edge Segment",
+          "geometry": "M0 0l0 84",
+          "viewBox": [
+            0,
+            0,
+            1,
+            84
+          ],
+          "width": 1,
+          "height": 84,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "b2l9nC",
+          "x": 765,
+          "y": 288,
+          "name": "Arrowhead",
+          "geometry": "M5 12l-5-12 10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            12
+          ],
+          "fill": "#4F46E5",
+          "width": 10,
+          "height": 12
+        },
+        {
+          "type": "frame",
+          "id": "R0GcD",
+          "x": 675,
+          "y": 240,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hlXGa",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Enviar con campos inválidos",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "QfN9K",
+          "x": 880,
+          "y": 172,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "UgYom",
+          "x": 948,
+          "y": 167,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "LdWUI",
+          "x": 825,
+          "y": 160,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yVgea",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Enviar formulario válido",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "Yr1fl",
+          "x": 880,
+          "y": 662.733126291999,
+          "name": "Edge Segment",
+          "geometry": "M0 149.26687l74.63344-149.26687",
+          "viewBox": [
+            0,
+            0,
+            74.63343685400048,
+            149.26687370800096
+          ],
+          "width": 74.63343685400048,
+          "height": 149.26687370800096,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "rjQT0",
+          "x": 950.1613008990009,
+          "y": 652,
+          "name": "Arrowhead",
+          "geometry": "M9.8387 0l-0.89443 12.96919-8.94427-4.47213z",
+          "viewBox": [
+            0,
+            0,
+            9.838699100999065,
+            12.969194269498871
+          ],
+          "fill": "#4F46E5",
+          "width": 9.838699100999065,
+          "height": 12.969194269498871
+        },
+        {
+          "type": "frame",
+          "id": "wBzQk",
+          "x": 825,
+          "y": 720,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TcGQ5",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Nueva noticia'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "wZUvG",
+          "x": 1180,
+          "y": 652,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "mjM43",
+          "x": 1248,
+          "y": 647,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "RST8d",
+          "x": 1125,
+          "y": 640,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dBIbE",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Publicar'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "elwuM",
+          "x": 880,
+          "y": 812,
+          "name": "Edge Segment",
+          "geometry": "M0 0l68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "L7BhP",
+          "x": 948,
+          "y": 807,
+          "name": "Arrowhead",
+          "geometry": "M12 5l-12 5 0-10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#4F46E5",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "FHpN1",
+          "x": 825,
+          "y": 800,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WLiV1",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Editar y clic 'Guardar'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "rv5uk",
+          "x": 770,
+          "y": 844,
+          "name": "Edge Segment",
+          "geometry": "M0 0l180.04775 121.29532",
+          "viewBox": [
+            0,
+            0,
+            180.04774755596998,
+            121.29532466928504
+          ],
+          "width": 180.04774755596998,
+          "height": 121.29532466928504,
+          "stroke": "#4F46E5",
+          "strokeWidth": 2,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "u2F2u",
+          "x": 947.2541328348387,
+          "y": 961.1485528176058,
+          "name": "Arrowhead",
+          "geometry": "M12.74587 10.85145l-12.74587-2.55791 5.58723-8.29354z",
+          "viewBox": [
+            0,
+            0,
+            12.745867165161258,
+            10.851447182394168
+          ],
+          "fill": "#4F46E5",
+          "width": 12.745867165161258,
+          "height": 10.851447182394168
+        },
+        {
+          "type": "frame",
+          "id": "uuC2X",
+          "x": 770,
+          "y": 896,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Nrlut",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Clic 'Eliminar'",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "zdWjP",
+          "x": 660,
+          "y": 210.2530386511092,
+          "name": "Edge Segment",
+          "geometry": "M0 109.74696l179.75795-109.74696",
+          "viewBox": [
+            0,
+            0,
+            179.75795393352803,
+            109.74696134889079
+          ],
+          "width": 179.75795393352803,
+          "height": 109.74696134889079,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "abK7o",
+          "x": 837.1525211622326,
+          "y": 204,
+          "name": "Arrowhead",
+          "geometry": "M12.84748 0l-7.63661 10.52056-5.21087-8.53504z",
+          "viewBox": [
+            0,
+            0,
+            12.847478837767426,
+            10.520557845472538
+          ],
+          "fill": "#94A3B8",
+          "width": 12.847478837767426,
+          "height": 10.520557845472538
+        },
+        {
+          "type": "frame",
+          "id": "b1mHz",
+          "x": 660,
+          "y": 250,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LSeN3",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Corregir datos",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "f18xu",
+          "x": 1370,
+          "y": 684,
+          "name": "Edge Segment",
+          "geometry": "M0 0l0 216",
+          "viewBox": [
+            0,
+            0,
+            1,
+            216
+          ],
+          "width": 1,
+          "height": 216,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "hqYKY",
+          "x": 810,
+          "y": 900,
+          "name": "Edge Segment",
+          "geometry": "M560 0l-560 0",
+          "viewBox": [
+            0,
+            0,
+            560,
+            1
+          ],
+          "width": 560,
+          "height": 1,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "kAyV2",
+          "x": 810,
+          "y": 856,
+          "name": "Edge Segment",
+          "geometry": "M0 44l0-44",
+          "viewBox": [
+            0,
+            0,
+            1,
+            44
+          ],
+          "width": 1,
+          "height": 44,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "S8p4tL",
+          "x": 805,
+          "y": 844,
+          "name": "Arrowhead",
+          "geometry": "M5 0l5 12-10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            12
+          ],
+          "fill": "#94A3B8",
+          "width": 10,
+          "height": 12
+        },
+        {
+          "type": "frame",
+          "id": "cVxz8",
+          "x": 995,
+          "y": 888,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "y7ZXYX",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Volver al listado",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "HpMei",
+          "x": 892,
+          "y": 832,
+          "name": "Edge Segment",
+          "geometry": "M68 0l-68 0",
+          "viewBox": [
+            0,
+            0,
+            68,
+            1
+          ],
+          "width": 68,
+          "height": 1,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "YsQxp",
+          "x": 880,
+          "y": 827,
+          "name": "Arrowhead",
+          "geometry": "M0 5l12-5 0 10z",
+          "viewBox": [
+            0,
+            0,
+            12,
+            10
+          ],
+          "fill": "#94A3B8",
+          "width": 12,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "vdCmY",
+          "x": 825,
+          "y": 820,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wrwv7",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Volver",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "geEQ8",
+          "x": 830,
+          "y": 972,
+          "name": "Edge Segment",
+          "geometry": "M130 0l-130 0",
+          "viewBox": [
+            0,
+            0,
+            130,
+            1
+          ],
+          "width": 130,
+          "height": 1,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "IBjur",
+          "x": 830,
+          "y": 856,
+          "name": "Edge Segment",
+          "geometry": "M0 116l0-116",
+          "viewBox": [
+            0,
+            0,
+            1,
+            116
+          ],
+          "width": 1,
+          "height": 116,
+          "stroke": "#94A3B8",
+          "strokeWidth": 1.5,
+          "strokeLinecap": "round"
+        },
+        {
+          "type": "path",
+          "id": "ER9V6",
+          "x": 825,
+          "y": 844,
+          "name": "Arrowhead",
+          "geometry": "M5 0l5 12-10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            12
+          ],
+          "fill": "#94A3B8",
+          "width": 10,
+          "height": 12
+        },
+        {
+          "type": "frame",
+          "id": "xxybJ",
+          "x": 735,
+          "y": 896,
+          "name": "Edge Label",
+          "width": 190,
+          "height": 24,
+          "fill": "#FFFFFFEE",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "GqHUn",
+              "name": "Label Text",
+              "fill": "#475569",
+              "textGrowth": "fixed-width",
+              "width": 178,
+              "content": "Confirmar y volver",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lflbK",
+          "x": 1230,
+          "y": 40,
+          "name": "Legend",
+          "width": 360,
+          "fill": "#FFFFFF",
+          "cornerRadius": 10,
+          "stroke": "#E2E8F0",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "A6MiM",
+              "name": "Legend Title",
+              "fill": "#0F172A",
+              "content": "Leyenda",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "XQvuQ",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "NkHeC",
+                  "name": "Swatch",
+                  "fill": "#4F46E5",
+                  "width": 24,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "Ss6E3",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "Flujo principal (acción del usuario → nueva pantalla)",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gfGQd",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "z0vOTe",
+                  "name": "Swatch",
+                  "fill": "#94A3B8",
+                  "width": 24,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "fkAAJ",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "Retorno / confirmación (vuelve a la pantalla anterior)",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c8jQbq",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "Y2L2p6",
+                  "name": "Swatch",
+                  "fill": "#DBEAFE",
+                  "width": 16,
+                  "height": 16,
+                  "stroke": "#3B82F6",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "G8ClB",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "Punto de entrada",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pvsLe",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "U8UyMg",
+                  "name": "Swatch",
+                  "fill": "#F0FDF4",
+                  "width": 16,
+                  "height": 16,
+                  "stroke": "#22C55E",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "GUVNI",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "Estado de éxito",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a7syI",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "EXlQi",
+                  "name": "Swatch",
+                  "fill": "#FEF2F2",
+                  "width": 16,
+                  "height": 16,
+                  "stroke": "#EF4444",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "MjJez",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "Estado de error / destructivo",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c8jSi",
+              "name": "Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "aKUUy",
+                  "name": "Swatch",
+                  "fill": "#FFFBEB",
+                  "width": 16,
+                  "height": 16,
+                  "stroke": "#F59E0B",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "jwaAM",
+                  "name": "Text",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "Panel administrativo",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
