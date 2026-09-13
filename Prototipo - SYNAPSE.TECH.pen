@@ -1,0 +1,3787 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "NE0oM",
+      "x": 0,
+      "y": 422,
+      "name": "Header",
+      "reusable": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "stroke": "$border-subtle",
+      "strokeWidth": {
+        "bottom": 1
+      },
+      "gap": 24,
+      "padding": [
+        0,
+        "$space-page-x"
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "f2zBfZ",
+          "name": "Logo Group",
+          "gap": 10,
+          "padding": [
+            24,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sEvOe",
+              "name": "Logo Icon Wrap",
+              "width": 36,
+              "height": 36,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$accent-primary",
+                    "position": 0
+                  },
+                  {
+                    "color": "$accent-secondary",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "lOhrr",
+                  "name": "Logo Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "zap",
+                  "library": "lucide",
+                  "fill": "#0A0D14"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "MnuAN",
+              "name": "Logo Text",
+              "fill": "$text-primary",
+              "content": "SYNAPSE.TECH",
+              "fontFamily": "$font-heading",
+              "fontSize": 19,
+              "fontWeight": "700",
+              "letterSpacing": 0.2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jqHyI",
+          "name": "Nav",
+          "gap": 36,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "J1Gq9",
+              "name": "Nav Inicio",
+              "fill": "$text-primary",
+              "content": "Inicio",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "p3wiT",
+              "name": "Nav Categorías",
+              "fill": "$text-secondary",
+              "content": "Categorías",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "l6bMn",
+              "name": "Nav Favoritos",
+              "fill": "$text-secondary",
+              "content": "Favoritos",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "PC4vZ",
+              "name": "Nav Contacto",
+              "fill": "$text-secondary",
+              "content": "Contacto",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ktj0m",
+          "name": "Actions",
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XMH4i",
+              "name": "Search Button",
+              "width": 38,
+              "height": 38,
+              "fill": "$bg-surface",
+              "cornerRadius": 10,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "yYl5L",
+                  "name": "Search Icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "search",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AFvWU",
+              "name": "Profile Chip",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "gap": 8,
+              "padding": [
+                6,
+                12,
+                6,
+                6
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IYhIp",
+                  "name": "Avatar Photo",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "ilias_cgb",
+                    "link": "https://unsplash.com/@ilias_cgb",
+                    "author": "Ilias Chebbi"
+                  },
+                  "width": 30,
+                  "height": 30,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1621203860694-c0fc09ea64bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 999
+                },
+                {
+                  "type": "frame",
+                  "id": "W80DSZ",
+                  "name": "Name Col",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vphS0",
+                      "name": "Profile Name",
+                      "fill": "$text-primary",
+                      "content": "Cristian Ricardo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "BLGQd",
+                  "name": "Chevron Icon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "chevron-down",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KAG3B",
+      "x": 0,
+      "y": 680,
+      "name": "Footer",
+      "reusable": true,
+      "width": 1440,
+      "fill": "$bg-surface",
+      "stroke": "$border-subtle",
+      "strokeWidth": {
+        "top": 1
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ox8N7",
+          "name": "Footer Top",
+          "width": "fill_container",
+          "gap": 80,
+          "padding": "$space-page-x",
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VirWM",
+              "name": "Brand Column",
+              "width": 320,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tAZit",
+                  "name": "Brand Logo",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "U1J1Z",
+                      "name": "Brand Icon Wrap",
+                      "width": 30,
+                      "height": 30,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$accent-primary",
+                            "position": 0
+                          },
+                          {
+                            "color": "$accent-secondary",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "A5Nr4G",
+                          "name": "Brand Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "zap",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "NIFPi",
+                      "name": "Brand Text",
+                      "fill": "$text-primary",
+                      "content": "SYNAPSE.TECH",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "r2g3i",
+                  "name": "Brand Desc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Periodismo tecnológico con enfoque en IA, hardware, software y ciberseguridad. Noticias verificadas, análisis claros.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "G4cCY",
+                  "name": "Social Row",
+                  "gap": 10,
+                  "padding": [
+                    6,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Y7aJQu",
+                      "name": "Social twitter",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$bg-elevated",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "NDoHV",
+                          "name": "Icon twitter",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "twitter",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Iwbi7",
+                      "name": "Social linkedin",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$bg-elevated",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "TWdiZ",
+                          "name": "Icon linkedin",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "linkedin",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Y1I0wm",
+                      "name": "Social github",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$bg-elevated",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "k6EWh",
+                          "name": "Icon github",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "github",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GesUc",
+                      "name": "Social youtube",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$bg-elevated",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "h1OBA",
+                          "name": "Icon youtube",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "youtube",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xCudx",
+              "name": "Col Secciones",
+              "width": 180,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B8kqd",
+                  "name": "Col Title",
+                  "fill": "$text-primary",
+                  "content": "SECCIONES",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.4
+                },
+                {
+                  "type": "frame",
+                  "id": "ceXIN",
+                  "name": "Links Wrap",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j5Rjlu",
+                      "name": "Inteligencia Artificial",
+                      "fill": "$text-secondary",
+                      "content": "Inteligencia Artificial",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pGYf1",
+                      "name": "Hardware",
+                      "fill": "$text-secondary",
+                      "content": "Hardware",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JL7e0",
+                      "name": "Software",
+                      "fill": "$text-secondary",
+                      "content": "Software",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "watCo",
+                      "name": "Ciberseguridad",
+                      "fill": "$text-secondary",
+                      "content": "Ciberseguridad",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bkx4f",
+                      "name": "Startups",
+                      "fill": "$text-secondary",
+                      "content": "Startups",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F4rzz",
+              "name": "Col Compañía",
+              "width": 180,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VYFUM",
+                  "name": "Col Title",
+                  "fill": "$text-primary",
+                  "content": "COMPAÑÍA",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.4
+                },
+                {
+                  "type": "frame",
+                  "id": "Jfold",
+                  "name": "Links Wrap",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gYZ7i",
+                      "name": "Sobre nosotros",
+                      "fill": "$text-secondary",
+                      "content": "Sobre nosotros",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wySaD",
+                      "name": "Equipo editorial",
+                      "fill": "$text-secondary",
+                      "content": "Equipo editorial",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E8pZAL",
+                      "name": "Contacto",
+                      "fill": "$text-secondary",
+                      "content": "Contacto",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zp4MO",
+                      "name": "Trabaja con nosotros",
+                      "fill": "$text-secondary",
+                      "content": "Trabaja con nosotros",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Xqmmp",
+              "name": "Col Legal",
+              "width": 180,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hkDv2",
+                  "name": "Col Title",
+                  "fill": "$text-primary",
+                  "content": "LEGAL",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.4
+                },
+                {
+                  "type": "frame",
+                  "id": "i3hI75",
+                  "name": "Links Wrap",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x4DL4L",
+                      "name": "Términos de uso",
+                      "fill": "$text-secondary",
+                      "content": "Términos de uso",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FmreD",
+                      "name": "Privacidad",
+                      "fill": "$text-secondary",
+                      "content": "Privacidad",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fyOLv",
+                      "name": "Cookies",
+                      "fill": "$text-secondary",
+                      "content": "Cookies",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V5pOP",
+          "name": "Footer Bottom",
+          "width": "fill_container",
+          "stroke": "$border-subtle",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            20,
+            "$space-page-x"
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "g7CH3",
+              "name": "Copyright",
+              "fill": "$text-tertiary",
+              "content": "© 2026 SYNAPSE.TECH — Proyecto académico Politécnico Grancolombiano",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "D0WlQ",
+              "name": "Made With",
+              "fill": "$text-tertiary",
+              "content": "Hecho con Bootstrap · Grupo 26",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dyJCE",
+      "x": 0,
+      "y": -74,
+      "name": "News Card",
+      "reusable": true,
+      "clip": true,
+      "width": 400,
+      "fill": "$bg-surface",
+      "cornerRadius": "$radius-lg",
+      "stroke": "$border-subtle",
+      "strokeWidth": 1,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aVBsV",
+          "name": "Image",
+          "metadata": {
+            "type": "unsplash",
+            "username": "albertstoynov",
+            "link": "https://unsplash.com/@albertstoynov",
+            "author": "Albert Stoynov"
+          },
+          "width": "fill_container",
+          "height": 180,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1765256931521-0f843b7b3100?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "padding": 16,
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L3GTTT",
+              "name": "Category Tag",
+              "fill": "$tag-ia",
+              "cornerRadius": 999,
+              "padding": [
+                6,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "A9NULj",
+                  "name": "Category Label",
+                  "fill": "#0A0D14",
+                  "content": "IA",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G4DJi",
+              "name": "Fav Wrap",
+              "width": 32,
+              "height": 32,
+              "fill": "#0A0D14AA",
+              "cornerRadius": 999,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "eimWN",
+                  "name": "Fav Icon",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "heart",
+                  "library": "lucide",
+                  "fill": "#F4F6FB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BgRzO",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "TbiDO",
+              "name": "Title",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Título de la noticia tecnológica de ejemplo",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-heading",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "t176O",
+              "name": "Excerpt",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Resumen breve y claro de la noticia para que el lector entienda el contexto antes de abrir el detalle.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "v2Lvmp",
+              "name": "Meta Row",
+              "width": "fill_container",
+              "padding": [
+                6,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oqfpi",
+                  "name": "Left Meta",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "s4RaX",
+                      "name": "Clock Icon",
+                      "width": 13,
+                      "height": 13,
+                      "icon": "clock-3",
+                      "library": "lucide",
+                      "fill": "$text-tertiary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K1bIb1",
+                      "name": "Meta Text",
+                      "fill": "$text-tertiary",
+                      "content": "12 sep · 4 min",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hBomd",
+                  "name": "Read More",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iswFu",
+                      "name": "Read More Label",
+                      "fill": "$accent-secondary",
+                      "content": "Leer más",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "P7ivqU",
+                      "name": "Arrow Icon",
+                      "width": 13,
+                      "height": 13,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$accent-secondary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WZcr8",
+      "x": 0,
+      "y": 1206,
+      "name": "Home",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "d5PMD",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "AArDn",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            48,
+            "$space-page-x",
+            24,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "cRI0r",
+              "name": "Hero Left",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                48,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EToPn",
+                  "name": "Eyebrow",
+                  "fill": "$accent-secondary",
+                  "content": "DESTACADO · INTELIGENCIA ARTIFICIAL",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "c2jui",
+                  "name": "Hero Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                  "lineHeight": 1.15,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "KFEeV",
+                  "name": "Hero Excerpt",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Investigadores presentan una arquitectura de red neuronal que optimiza el uso de recursos en infraestructuras de cómputo a gran escala, marcando un hito para la sostenibilidad tecnológica.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "FhBqz",
+                  "name": "Hero Meta",
+                  "gap": 14,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s3eIWp",
+                      "name": "Avatar",
+                      "width": 34,
+                      "height": 34,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$accent-primary",
+                            "position": 0
+                          },
+                          {
+                            "color": "$accent-secondary",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qg63W",
+                          "name": "Avatar Initials",
+                          "fill": "#0A0D14",
+                          "content": "MR",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UDgl5",
+                      "name": "Author",
+                      "fill": "$text-primary",
+                      "content": "María Rendón",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gd0Tf",
+                      "name": "Dot",
+                      "fill": "$text-tertiary",
+                      "content": "·",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yazPv",
+                      "name": "Date",
+                      "fill": "$text-tertiary",
+                      "content": "12 sep 2026 · 6 min de lectura",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dOAjC",
+                  "name": "Hero Buttons",
+                  "gap": 12,
+                  "padding": [
+                    10,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UdTek",
+                      "name": "Read Button",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UXl5Y",
+                          "name": "Read Button Label",
+                          "fill": "#0A0D14",
+                          "content": "Leer artículo completo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "qYxbf",
+                          "name": "Read Button Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hsRYd",
+                      "name": "Save Button",
+                      "fill": "$bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "gap": 8,
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "nZoNp",
+                          "name": "Save Button Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "bookmark",
+                          "library": "lucide",
+                          "fill": "$text-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HVja6",
+                          "name": "Save Button Label",
+                          "fill": "$text-primary",
+                          "content": "Guardar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lkfgi",
+              "name": "Hero Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "valentinlacoste",
+                "link": "https://unsplash.com/@valentinlacoste",
+                "author": "Valentin Lacoste"
+              },
+              "width": 520,
+              "height": 420,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1785682231847-93265d8e633d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": "$radius-lg"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D8JN4",
+          "name": "Category Filters",
+          "width": "fill_container",
+          "gap": 10,
+          "padding": [
+            0,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q1yuG",
+              "name": "Pill Todas",
+              "fill": "$accent-primary",
+              "cornerRadius": 999,
+              "stroke": "$accent-primary",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w3ptAG",
+                  "name": "Pill Label",
+                  "fill": "#0A0D14",
+                  "content": "Todas",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n5QmD",
+              "name": "Pill Inteligencia Artificial",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SFmLl",
+                  "name": "Pill Label",
+                  "fill": "$text-secondary",
+                  "content": "Inteligencia Artificial",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "v3SqXl",
+              "name": "Pill Hardware",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L4OX5",
+                  "name": "Pill Label",
+                  "fill": "$text-secondary",
+                  "content": "Hardware",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kHEVc",
+              "name": "Pill Software",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J5PVh",
+                  "name": "Pill Label",
+                  "fill": "$text-secondary",
+                  "content": "Software",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M5hf2f",
+              "name": "Pill Ciberseguridad",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eBVGT",
+                  "name": "Pill Label",
+                  "fill": "$text-secondary",
+                  "content": "Ciberseguridad",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "h96xqJ",
+              "name": "Pill Startups",
+              "fill": "$bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P4JMy",
+                  "name": "Pill Label",
+                  "fill": "$text-secondary",
+                  "content": "Startups",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "A3lnBe",
+          "name": "Latest News Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            0,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mtd90",
+              "name": "Section Title Row",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OqfBf",
+                  "name": "Section Title",
+                  "fill": "$text-primary",
+                  "content": "Últimas noticias",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "OTp58",
+                  "name": "View All",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AzXlt",
+                      "name": "View All Label",
+                      "fill": "$accent-secondary",
+                      "content": "Ver todas",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "P1Q1y",
+                      "name": "View All Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$accent-secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IWByI",
+              "name": "Grid Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "DFcXx",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Bootstrap 6 llega con soporte nativo para modo oscuro",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1649451844835-7f9d1dc6b0bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-software"
+                    },
+                    "A9NULj": {
+                      "content": "Software",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#0A0D14AA"
+                    },
+                    "eimWN": {
+                      "fill": "#F4F6FB"
+                    },
+                    "TbiDO": {
+                      "content": "Bootstrap 6 llega con soporte nativo para modo oscuro"
+                    },
+                    "t176O": {
+                      "content": "La nueva versión del framework simplifica la construcción de interfaces adaptables sin CSS adicional."
+                    },
+                    "K1bIb1": {
+                      "content": "10 sep · 3 min"
+                    }
+                  }
+                },
+                {
+                  "id": "lTj5a",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Detectan vulnerabilidad crítica en routers domésticos",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1614064745729-79e39d1b39b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-security"
+                    },
+                    "A9NULj": {
+                      "content": "Ciberseguridad",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#7C5CFF40"
+                    },
+                    "eimWN": {
+                      "fill": "$accent-primary"
+                    },
+                    "TbiDO": {
+                      "content": "Detectan vulnerabilidad crítica en routers domésticos"
+                    },
+                    "t176O": {
+                      "content": "Fabricantes lanzan parches urgentes tras el hallazgo de una falla que exponía redes locales."
+                    },
+                    "K1bIb1": {
+                      "content": "10 sep · 5 min"
+                    }
+                  }
+                },
+                {
+                  "id": "AiZMQ",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Startup colombiana de robótica cierra ronda de $8M",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1661882217431-b64b303fb1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-startups"
+                    },
+                    "A9NULj": {
+                      "content": "Startups",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#0A0D14AA"
+                    },
+                    "eimWN": {
+                      "fill": "#F4F6FB"
+                    },
+                    "TbiDO": {
+                      "content": "Startup colombiana de robótica cierra ronda de $8M"
+                    },
+                    "t176O": {
+                      "content": "La compañía busca expandir su tecnología de automatización a mercados de Latinoamérica."
+                    },
+                    "K1bIb1": {
+                      "content": "9 sep · 4 min"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zQuUL",
+              "name": "Grid Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "b5oHU",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Nuevo chip promete duplicar la autonomía de laptops",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1672307613484-3254a04651fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-hardware"
+                    },
+                    "A9NULj": {
+                      "content": "Hardware",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#0A0D14AA"
+                    },
+                    "eimWN": {
+                      "fill": "#F4F6FB"
+                    },
+                    "TbiDO": {
+                      "content": "Nuevo chip promete duplicar la autonomía de laptops"
+                    },
+                    "t176O": {
+                      "content": "El procesador de bajo consumo llegará a equipos comerciales a inicios de 2027."
+                    },
+                    "K1bIb1": {
+                      "content": "9 sep · 3 min"
+                    }
+                  }
+                },
+                {
+                  "id": "C0csk6",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Asistentes de IA ahora pueden razonar sobre imágenes médicas",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-ia"
+                    },
+                    "A9NULj": {
+                      "content": "Inteligencia Artificial",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#0A0D14AA"
+                    },
+                    "eimWN": {
+                      "fill": "#F4F6FB"
+                    },
+                    "TbiDO": {
+                      "content": "Asistentes de IA ahora pueden razonar sobre imágenes médicas"
+                    },
+                    "t176O": {
+                      "content": "Un estudio clínico muestra resultados prometedores en diagnóstico asistido por IA."
+                    },
+                    "K1bIb1": {
+                      "content": "8 sep · 6 min"
+                    }
+                  }
+                },
+                {
+                  "id": "KjukS",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Lanzan framework open source para apps offline-first",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-software"
+                    },
+                    "A9NULj": {
+                      "content": "Software",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#0A0D14AA"
+                    },
+                    "eimWN": {
+                      "fill": "#F4F6FB"
+                    },
+                    "TbiDO": {
+                      "content": "Lanzan framework open source para apps offline-first"
+                    },
+                    "t176O": {
+                      "content": "La herramienta permite sincronización automática de datos sin conexión constante."
+                    },
+                    "K1bIb1": {
+                      "content": "8 sep · 4 min"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Qrijx",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 20
+        },
+        {
+          "id": "WzR8N",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jKqvz",
+      "x": 1560,
+      "y": 1206,
+      "name": "News Detail",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "AL7NX",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "M1wMX",
+          "name": "Article",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            "$space-page-x",
+            40,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WBJTE",
+              "name": "Breadcrumb",
+              "gap": 8,
+              "padding": [
+                40,
+                0,
+                24,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sFc7k",
+                  "name": "Crumb Home",
+                  "fill": "$text-tertiary",
+                  "content": "Inicio",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "L0oPk",
+                  "name": "Crumb Sep 1",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "Du1YD",
+                  "name": "Crumb Cat",
+                  "fill": "$text-tertiary",
+                  "content": "Inteligencia Artificial",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "rrcnb",
+                  "name": "Crumb Sep 2",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "b5N8j",
+                  "name": "Crumb Current",
+                  "fill": "$text-secondary",
+                  "content": "Asistentes de IA en diagnóstico médico",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yre35",
+              "name": "Detail Category Tag",
+              "fill": "$tag-ia",
+              "cornerRadius": 999,
+              "padding": [
+                7,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GH193",
+                  "name": "Detail Category Label",
+                  "fill": "#0A0D14",
+                  "content": "INTELIGENCIA ARTIFICIAL",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.3
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WV3eI",
+              "name": "Detail Title",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Asistentes de IA ahora pueden razonar sobre imágenes médicas con precisión clínica",
+              "lineHeight": 1.2,
+              "fontFamily": "$font-heading",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "k9itF",
+              "name": "Byline",
+              "width": "fill_container",
+              "padding": [
+                24,
+                0,
+                32,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vRa52",
+                  "name": "Byline Left",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "m1hgy",
+                      "name": "Author Avatar",
+                      "width": 44,
+                      "height": 44,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$accent-primary",
+                            "position": 0
+                          },
+                          {
+                            "color": "$accent-secondary",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ipdOR",
+                          "name": "Author Initials",
+                          "fill": "#0A0D14",
+                          "content": "JS",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WB8gp",
+                      "name": "Author Text Col",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DllBs",
+                          "name": "Author Name",
+                          "fill": "$text-primary",
+                          "content": "Juan Esteban Serna",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZYBmh",
+                          "name": "Author Sub",
+                          "fill": "$text-tertiary",
+                          "content": "Editor de Tecnología · 8 sep 2026 · 6 min de lectura",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l3DuOe",
+                  "name": "Byline Actions",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "R0FVa",
+                      "name": "Action heart",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "MQYRk",
+                          "name": "Action Icon heart",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "heart",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jKvHx",
+                      "name": "Action share-2",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "Es49l",
+                          "name": "Action Icon share-2",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "share-2",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L0RlVc",
+                      "name": "Action bookmark",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "q68mzA",
+                          "name": "Action Icon bookmark",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "bookmark",
+                          "library": "lucide",
+                          "fill": "$text-secondary"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RURu1",
+              "name": "Detail Hero Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "whisperingshiba",
+                "link": "https://unsplash.com/@whisperingshiba",
+                "author": "Shawn Day"
+              },
+              "width": "fill_container",
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1711409645921-ef3db0501f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIyMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": "$radius-lg"
+            },
+            {
+              "type": "frame",
+              "id": "p7Zg3",
+              "name": "Body",
+              "width": "fill_container",
+              "gap": 64,
+              "padding": [
+                40,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qiso7",
+                  "name": "Body Text Col",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b9GU9",
+                      "name": "Para 1",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Un equipo internacional de investigadores presentó un nuevo sistema de inteligencia artificial capaz de interpretar radiografías, tomografías y resonancias magnéticas con un nivel de precisión comparable al de especialistas humanos. El modelo fue entrenado con más de dos millones de imágenes anotadas por radiólogos de distintos países.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EIClI",
+                      "name": "Pull Quote",
+                      "width": "fill_container",
+                      "stroke": "$accent-primary",
+                      "strokeWidth": {
+                        "left": 3
+                      },
+                      "gap": 16,
+                      "padding": [
+                        4,
+                        0,
+                        4,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ygqNY",
+                          "name": "Quote Text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "“Esta tecnología no reemplaza al médico, pero puede reducir hasta en un 30% el tiempo de diagnóstico en casos complejos.”",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "X17my",
+                      "name": "Para 2",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Durante las pruebas clínicas, el sistema logró identificar patrones sutiles asociados a enfermedades en etapas tempranas, incluyendo hallazgos que en ocasiones pasan desapercibidos en una primera revisión. Los resultados fueron validados por un comité independiente de especialistas en radiología.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NCxuy",
+                      "name": "Para 3",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Los desarrolladores aseguran que el modelo se integrará como herramienta de apoyo —nunca de reemplazo— en hospitales públicos durante la primera fase de implementación, prevista para el segundo semestre de 2027.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G9LTMs",
+                  "name": "Sidebar",
+                  "width": 320,
+                  "fill": "$bg-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YjaXO",
+                      "name": "Sidebar Title",
+                      "fill": "$text-primary",
+                      "content": "Datos clave",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bl2rk",
+                      "name": "Fact Precisión reportada",
+                      "width": "fill_container",
+                      "stroke": "$border-subtle",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        10,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K3dYFj",
+                          "name": "Fact Label",
+                          "fill": "$text-tertiary",
+                          "content": "Precisión reportada",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QfdcN",
+                          "name": "Fact Value",
+                          "fill": "$text-primary",
+                          "content": "94.2%",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rVimh",
+                      "name": "Fact Imágenes de entrenamiento",
+                      "width": "fill_container",
+                      "stroke": "$border-subtle",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        10,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G0HWb",
+                          "name": "Fact Label",
+                          "fill": "$text-tertiary",
+                          "content": "Imágenes de entrenamiento",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dYAly",
+                          "name": "Fact Value",
+                          "fill": "$text-primary",
+                          "content": "2.1 millones",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mENb4",
+                      "name": "Fact Hospitales piloto",
+                      "width": "fill_container",
+                      "stroke": "$border-subtle",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        10,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Axdd8",
+                          "name": "Fact Label",
+                          "fill": "$text-tertiary",
+                          "content": "Hospitales piloto",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ydqdm",
+                          "name": "Fact Value",
+                          "fill": "$text-primary",
+                          "content": "12 países",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VdCH3",
+                      "name": "Fact Fase de despliegue",
+                      "width": "fill_container",
+                      "stroke": "$border-subtle",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        10,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nJGpy",
+                          "name": "Fact Label",
+                          "fill": "$text-tertiary",
+                          "content": "Fase de despliegue",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lcuLD",
+                          "name": "Fact Value",
+                          "fill": "$text-primary",
+                          "content": "2027",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p9lKf",
+              "name": "Related Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                0,
+                40,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "V3UFN",
+                  "name": "Related Title",
+                  "fill": "$text-primary",
+                  "content": "Noticias relacionadas",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "c0RYL",
+                  "name": "Related Row",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "id": "emFs8",
+                      "type": "ref",
+                      "ref": "dyJCE",
+                      "name": "Bootstrap 6 llega con soporte nativo para modo oscuro",
+                      "width": "fill_container",
+                      "descendants": {
+                        "aVBsV": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1537884944318-390069bb8665?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        "L3GTTT": {
+                          "fill": "$tag-software"
+                        },
+                        "A9NULj": {
+                          "content": "Software",
+                          "fill": "#0A0D14"
+                        },
+                        "TbiDO": {
+                          "content": "Bootstrap 6 llega con soporte nativo para modo oscuro"
+                        },
+                        "t176O": {
+                          "content": "La nueva versión del framework simplifica la construcción de interfaces adaptables sin CSS adicional."
+                        },
+                        "K1bIb1": {
+                          "content": "10 sep · 3 min"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lXPIs",
+                      "type": "ref",
+                      "ref": "dyJCE",
+                      "name": "Nuevo chip promete duplicar la autonomía de laptops",
+                      "width": "fill_container",
+                      "descendants": {
+                        "aVBsV": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1751887687519-79c0d5faeac5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        "L3GTTT": {
+                          "fill": "$tag-hardware"
+                        },
+                        "A9NULj": {
+                          "content": "Hardware",
+                          "fill": "#0A0D14"
+                        },
+                        "TbiDO": {
+                          "content": "Nuevo chip promete duplicar la autonomía de laptops"
+                        },
+                        "t176O": {
+                          "content": "El procesador de bajo consumo llegará a equipos comerciales a inicios de 2027."
+                        },
+                        "K1bIb1": {
+                          "content": "9 sep · 3 min"
+                        }
+                      }
+                    },
+                    {
+                      "id": "xtHVy",
+                      "type": "ref",
+                      "ref": "dyJCE",
+                      "name": "Startup colombiana de robótica cierra ronda de $8M",
+                      "width": "fill_container",
+                      "descendants": {
+                        "aVBsV": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        "L3GTTT": {
+                          "fill": "$tag-startups"
+                        },
+                        "A9NULj": {
+                          "content": "Startups",
+                          "fill": "#0A0D14"
+                        },
+                        "TbiDO": {
+                          "content": "Startup colombiana de robótica cierra ronda de $8M"
+                        },
+                        "t176O": {
+                          "content": "La compañía busca expandir su tecnología de automatización a mercados de Latinoamérica."
+                        },
+                        "K1bIb1": {
+                          "content": "9 sep · 4 min"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nwljb",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KR9Hc",
+      "x": 3120,
+      "y": 1206,
+      "name": "Contact",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "OtIiM",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "kHe6H",
+          "name": "Contact Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            40,
+            "$space-page-x",
+            8,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "BLuzx",
+              "name": "Head Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "CONTÁCTANOS",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "s3OSZ",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Hablemos de tecnología",
+              "fontFamily": "$font-heading",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "sHdl5",
+              "name": "Head Sub",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "¿Tienes una noticia, sugerencia o quieres colaborar con SYNAPSE.TECH? Completa el formulario y te responderemos lo antes posible.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kZgD5",
+          "name": "Contact Layout",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            8,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "kUGkO",
+              "name": "Contact Form",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BkfM7",
+                  "name": "Row Name Email",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RT0uj",
+                      "name": "Field Nombre completo",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rkgmR",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Nombre completo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vtVtC",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "aXGT4",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "Ej. Juan Pérez",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pJBYx",
+                      "name": "Field Correo electrónico",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D0eV88",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Correo electrónico",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fNxb8",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WDT9w",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "tu@correo.com",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hHvMh",
+                  "name": "Field Asunto",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "N30iKt",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Asunto",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hb8Be",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a4eDRL",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "¿Sobre qué quieres hablar?",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "epBsC",
+                  "name": "Field Mensaje",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sr0GZ",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b3kD6f",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NRkVt",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "Escribe tu mensaje aquí...",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "loJXE",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "fill": "$accent-primary",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CHok5",
+                      "name": "Submit Label",
+                      "fill": "#0A0D14",
+                      "content": "Enviar mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "cDYnU",
+                      "name": "Submit Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "send",
+                      "library": "lucide",
+                      "fill": "#0A0D14"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QUr11",
+              "name": "Contact Info",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HFMxg",
+                  "name": "Info Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m0p84",
+                      "name": "Info Card Title",
+                      "fill": "$text-primary",
+                      "content": "Información de contacto",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w5Hcvp",
+                      "name": "Info Row Correo",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pWuxe",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "bI564",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "mail",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BDcdS",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u9vjh",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Correo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "y8u4N",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "redaccion@synapse.tech",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v28cr",
+                      "name": "Info Row Teléfono",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Y4ZlL",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "G14GC",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "phone",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k9qY4",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Mj2JP",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Teléfono",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Bwwak",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "+57 300 123 4567",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nhxXq",
+                      "name": "Info Row Ubicación",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lSqrG",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "U9GfQI",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "map-pin",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CJBoc",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IhemA",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Ubicación",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "UKBy1",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Bogotá, Colombia",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XVCGs",
+                      "name": "Info Row Horario",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VydFm",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Dq1It",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "clock-3",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "W7CLA",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Xcguv",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Horario",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ODxZ2",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Lun - Vie · 8:00 - 18:00",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n3WI93",
+                  "name": "Social Card",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$accent-primary",
+                        "position": 0
+                      },
+                      {
+                        "color": "$accent-secondary",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": "$radius-lg",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qNmZb",
+                      "name": "Social Card Title",
+                      "fill": "#0A0D14",
+                      "content": "Síguenos",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MEoDR",
+                      "name": "Social Card Sub",
+                      "fill": "#0A0D14CC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Entérate primero de las últimas noticias tech.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dJ6Zd",
+                      "name": "Social Icons Row",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "M66KS",
+                          "name": "Soc twitter",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "q8Ijtt",
+                              "name": "Soc Icon twitter",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "twitter",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YDhEL",
+                          "name": "Soc linkedin",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "EjJmA",
+                              "name": "Soc Icon linkedin",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "linkedin",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "P0EiWO",
+                          "name": "Soc github",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "tmVhE",
+                              "name": "Soc Icon github",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "github",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uppLJ",
+                          "name": "Soc youtube",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "TAZQ9",
+                              "name": "Soc Icon youtube",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "youtube",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YoFP7",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 40
+        },
+        {
+          "id": "g9tQR",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "v4vND",
+      "x": 4680,
+      "y": 1206,
+      "name": "Profile",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "c3MP0y",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "ArMrx",
+          "name": "Profile Hero",
+          "width": "fill_container",
+          "gap": 28,
+          "padding": [
+            48,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hBVcV",
+              "name": "Big Avatar",
+              "metadata": {
+                "type": "unsplash",
+                "username": "pratophoto",
+                "link": "https://unsplash.com/@pratophoto",
+                "author": "Brayden Prato"
+              },
+              "width": 96,
+              "height": 96,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1674157984529-421316d6287e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 999,
+              "stroke": "$accent-primary",
+              "strokeWidth": 2
+            },
+            {
+              "type": "frame",
+              "id": "vaLQr",
+              "name": "Profile Info Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i7WCk",
+                  "name": "Profile Full Name",
+                  "fill": "$text-primary",
+                  "content": "Cristian Ricardo",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Tsj2y",
+                  "name": "Profile Email",
+                  "fill": "$text-secondary",
+                  "content": "cristianricardo87@gmail.com",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "OLZkW",
+                  "name": "Stats Row",
+                  "gap": 24,
+                  "padding": [
+                    10,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S9zekX",
+                      "name": "Stat 4 favoritos",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "FfyLx",
+                          "name": "Stat Icon heart",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "heart",
+                          "library": "lucide",
+                          "fill": "$accent-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CPRJp",
+                          "name": "Stat Label",
+                          "fill": "$text-tertiary",
+                          "content": "4 favoritos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XhFB4",
+                      "name": "Stat Miembro desde ago 2026",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "oAHi7",
+                          "name": "Stat Icon calendar",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "calendar",
+                          "library": "lucide",
+                          "fill": "$accent-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t2Cuz",
+                          "name": "Stat Label",
+                          "fill": "$text-tertiary",
+                          "content": "Miembro desde ago 2026",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BolBQ",
+              "name": "Edit Profile Button",
+              "fill": "$bg-surface",
+              "cornerRadius": 10,
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "gap": 8,
+              "padding": [
+                12,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "e0DIW",
+                  "name": "Edit Icon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "pencil",
+                  "library": "lucide",
+                  "fill": "$text-primary"
+                },
+                {
+                  "type": "text",
+                  "id": "JTwO7",
+                  "name": "Edit Label",
+                  "fill": "$text-primary",
+                  "content": "Editar perfil",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jjuPz",
+          "name": "Profile Tabs",
+          "width": "fill_container",
+          "stroke": "$border-subtle",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 8,
+          "padding": [
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Axn4b",
+              "name": "Tab Favoritos",
+              "stroke": "$accent-primary",
+              "strokeWidth": {
+                "bottom": 2
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                4
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "q7f48k",
+                  "name": "Tab Label",
+                  "fill": "$text-primary",
+                  "content": "Favoritos",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "e2EWa",
+              "name": "Tab Historial de lectura",
+              "stroke": "#00000000",
+              "strokeWidth": {
+                "bottom": 2
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                4
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yW2uS",
+                  "name": "Tab Label",
+                  "fill": "$text-tertiary",
+                  "content": "Historial de lectura",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZPBqq",
+              "name": "Tab Configuración",
+              "stroke": "#00000000",
+              "strokeWidth": {
+                "bottom": 2
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                14,
+                4
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uGg85",
+                  "name": "Tab Label",
+                  "fill": "$text-tertiary",
+                  "content": "Configuración",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L32sW",
+          "name": "Favorites Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "d4KjG",
+              "name": "Fav Section Title",
+              "fill": "$text-primary",
+              "content": "Mis noticias favoritas",
+              "fontFamily": "$font-heading",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "GKTJB",
+              "name": "Fav Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "txuzu",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Detectan vulnerabilidad crítica en routers domésticos",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI0NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-security"
+                    },
+                    "A9NULj": {
+                      "content": "Ciberseguridad",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#7C5CFF40"
+                    },
+                    "eimWN": {
+                      "fill": "$accent-primary"
+                    },
+                    "TbiDO": {
+                      "content": "Detectan vulnerabilidad crítica en routers domésticos"
+                    },
+                    "t176O": {
+                      "content": "Fabricantes lanzan parches urgentes tras el hallazgo de una falla que exponía redes locales."
+                    },
+                    "K1bIb1": {
+                      "content": "10 sep · 5 min"
+                    }
+                  }
+                },
+                {
+                  "id": "x9bUgA",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1782330135543-51b8d7f4189d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI0Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-ia"
+                    },
+                    "A9NULj": {
+                      "content": "Inteligencia Artificial",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#7C5CFF40"
+                    },
+                    "eimWN": {
+                      "fill": "$accent-primary"
+                    },
+                    "TbiDO": {
+                      "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos"
+                    },
+                    "t176O": {
+                      "content": "Investigadores presentan una arquitectura que optimiza el uso de recursos en infraestructuras de cómputo."
+                    },
+                    "K1bIb1": {
+                      "content": "12 sep · 6 min"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "o0zkGQ",
+              "name": "Fav Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "ApUzK",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Nuevo chip promete duplicar la autonomía de laptops",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1717667745934-53091623e8ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI0Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-hardware"
+                    },
+                    "A9NULj": {
+                      "content": "Hardware",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#7C5CFF40"
+                    },
+                    "eimWN": {
+                      "fill": "$accent-primary"
+                    },
+                    "TbiDO": {
+                      "content": "Nuevo chip promete duplicar la autonomía de laptops"
+                    },
+                    "t176O": {
+                      "content": "El procesador de bajo consumo llegará a equipos comerciales a inicios de 2027."
+                    },
+                    "K1bIb1": {
+                      "content": "9 sep · 3 min"
+                    }
+                  }
+                },
+                {
+                  "id": "q3wSld",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Startup colombiana de robótica cierra ronda de $8M",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjI0Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-startups"
+                    },
+                    "A9NULj": {
+                      "content": "Startups",
+                      "fill": "#0A0D14"
+                    },
+                    "G4DJi": {
+                      "fill": "#7C5CFF40"
+                    },
+                    "eimWN": {
+                      "fill": "$accent-primary"
+                    },
+                    "TbiDO": {
+                      "content": "Startup colombiana de robótica cierra ronda de $8M"
+                    },
+                    "t176O": {
+                      "content": "La compañía busca expandir su tecnología de automatización a mercados de Latinoamérica."
+                    },
+                    "K1bIb1": {
+                      "content": "9 sep · 4 min"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "y2HXC",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg-page": {
+      "type": "color",
+      "value": "#0A0D14"
+    },
+    "bg-surface": {
+      "type": "color",
+      "value": "#12151F"
+    },
+    "bg-surface-alt": {
+      "type": "color",
+      "value": "#171B27"
+    },
+    "bg-elevated": {
+      "type": "color",
+      "value": "#1C2130"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#242A3A"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#F4F6FB"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#8C93A6"
+    },
+    "text-tertiary": {
+      "type": "color",
+      "value": "#5C6376"
+    },
+    "accent-primary": {
+      "type": "color",
+      "value": "#7C5CFF"
+    },
+    "accent-secondary": {
+      "type": "color",
+      "value": "#22D3EE"
+    },
+    "tag-ia": {
+      "type": "color",
+      "value": "#7C5CFF"
+    },
+    "tag-hardware": {
+      "type": "color",
+      "value": "#22D3EE"
+    },
+    "tag-software": {
+      "type": "color",
+      "value": "#34D399"
+    },
+    "tag-security": {
+      "type": "color",
+      "value": "#F87171"
+    },
+    "tag-startups": {
+      "type": "color",
+      "value": "#FBBF24"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Space Grotesk"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 20
+    },
+    "space-page-x": {
+      "type": "number",
+      "value": 96
+    }
+  },
+  "fileToken": "da914545-24bd-4376-a37f-9ce897fa6088"
+}
