@@ -90,11 +90,19 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 ### 📐 Archivos y Vistas del Prototipo
 - **Archivo editable:** [`PROTOTIPO/Prototipo - SYNAPSE.TECH.pen`](./PROTOTIPO/Prototipo%20-%20SYNAPSE.TECH.pen) — Archivo fuente con el diseño completo realizado en **Pen**.
 - **Vistas exportadas:** Disponibles en alta resolución dentro de [`PROTOTIPO/EXPORTADOS/`](./PROTOTIPO/EXPORTADOS/):
-  - 🏠 **Home:** [`Home.png`](./PROTOTIPO/EXPORTADOS/Home.png) — Portada principal con destacados y secciones de noticias.
-  - 📄 **Detalle de Noticia:** [`News Detail.png`](./PROTOTIPO/EXPORTADOS/News%20Detail.png) — Lectura y cuerpo completo del artículo.
-  - ⭐ **Favoritos:** [`Favorites Page.png`](./PROTOTIPO/EXPORTADOS/Favorites%20Page.png) — Listado interactivo de artículos guardados.
-  - ✉️ **Contacto:** [`Contact.png`](./PROTOTIPO/EXPORTADOS/Contact.png) — Formulario de atención y comunicación.
-  - 👤 **Perfil:** [`Profile.png`](./PROTOTIPO/EXPORTADOS/Profile.png) — Panel de usuario y configuración.
+
+| Módulo / Vista | Archivo Exportado | Descripción |
+| :--- | :--- | :--- |
+| 🏠 **Home** | [`Home.png`](./PROTOTIPO/EXPORTADOS/Home.png) | Portada principal con cabecera, vitrina de noticias destacadas y catálogo. |
+| 📄 **Detalle de Noticia** | [`News Detail.png`](./PROTOTIPO/EXPORTADOS/News%20Detail.png) | Lectura del artículo completo, autor, fecha, categorías y botones de interacción. |
+| ⭐ **Favoritos** | [`Favorites Page.png`](./PROTOTIPO/EXPORTADOS/Favorites%20Page.png) | Colección personalizada de noticias guardadas por el usuario (`localStorage`). |
+| ✉️ **Contacto** | [`Contact.png`](./PROTOTIPO/EXPORTADOS/Contact.png) | Formulario de contacto y comunicación con el equipo editorial. |
+| ⚠️ **Contacto (Validación)** | [`Contacto - Validacion.png`](./PROTOTIPO/EXPORTADOS/Contacto%20-%20Validacion.png) | Estado con alertas y retroalimentación en validación de campos obligatorios/email. |
+| ✅ **Contacto (Enviado)** | [`Contacto - Enviado.png`](./PROTOTIPO/EXPORTADOS/Contacto%20-%20Enviado.png) | Confirmación visual y modal de agradecimiento tras el envío exitoso. |
+| 👤 **Perfil de Usuario** | [`Profile.png`](./PROTOTIPO/EXPORTADOS/Profile.png) | Panel con datos y preferencias del usuario lector. |
+| ⚙️ **Admin Noticias (Listado)** | [`Admin Noticias.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias.png) | Panel de administración para visualización del catálogo (Mini CRUD). |
+| ➕ **Admin Noticias (Nueva)** | [`Admin Noticias - Nueva.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Nueva.png) | Formulario para la creación y publicación de una nueva noticia. |
+| 🗑️ **Admin Noticias (Eliminar)** | [`Admin Noticias - Eliminar.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Eliminar.png) | Diálogo de confirmación interactivo para dar de baja una noticia del catálogo. |
 
 ---
 
@@ -118,8 +126,13 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 ```text
 FRONTEND-GRUPO26-POLI/
 ├── PROTOTIPO/                      # Material de diseño UI/UX
-│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG
+│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG (10 pantallas)
+│   │   ├── Admin Noticias - Eliminar.png
+│   │   ├── Admin Noticias - Nueva.png
+│   │   ├── Admin Noticias.png
 │   │   ├── Contact.png
+│   │   ├── Contacto - Enviado.png
+│   │   ├── Contacto - Validacion.png
 │   │   ├── Favorites Page.png
 │   │   ├── Home.png
 │   │   ├── News Detail.png
