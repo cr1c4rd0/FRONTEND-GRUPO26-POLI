@@ -70,8 +70,9 @@ Canal de comunicación que incluye un formulario interactivo con:
 
 ### 6. ⚙️ Gestión Básica de Noticias (Mini CRUD)
 Panel o funcionalidad administrativa básica que permite mantener actualizado el catálogo:
-- **Crear nuevas noticias:** Formulario para agregar nuevos artículos con su respectivo título, descripción, imagen y contenido.
-- **Eliminar noticias existentes:** Opción para remover noticias del catálogo activo.
+- **Crear nuevas noticias:** Formulario para agregar nuevos artículos con su respectivo título, descripción, imagen y contenido, incluyendo confirmación visual de publicación exitosa.
+- **Editar noticias existentes:** Capacidad de modificar datos de artículos y confirmar los cambios guardados.
+- **Eliminar noticias existentes:** Diálogo/modal interactivo de confirmación para remover noticias del catálogo activo.
 
 ---
 
@@ -101,7 +102,9 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 | ✅ **Contacto (Enviado)** | [`Contacto - Enviado.png`](./PROTOTIPO/EXPORTADOS/Contacto%20-%20Enviado.png) | Confirmación visual y modal de agradecimiento tras el envío exitoso. |
 | 👤 **Perfil de Usuario** | [`Profile.png`](./PROTOTIPO/EXPORTADOS/Profile.png) | Panel con datos y preferencias del usuario lector. |
 | ⚙️ **Admin Noticias (Listado)** | [`Admin Noticias.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias.png) | Panel de administración para visualización del catálogo (Mini CRUD). |
-| ➕ **Admin Noticias (Nueva)** | [`Admin Noticias - Nueva.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Nueva.png) | Formulario para la creación y publicación de una nueva noticia. |
+| ➕ **Admin Noticias (Nueva)** | [`Admin Noticias - Nueva.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Nueva.png) | Formulario para la creación y captura de datos de una nueva noticia. |
+| 🚀 **Admin Noticias (Publicada)** | [`Admin Noticias - Nueva (Publicada).png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Nueva%20(Publicada).png) | Estado y alerta de confirmación tras publicar exitosamente una nueva noticia. |
+| 💾 **Admin Noticias (Guardada)** | [`Admin Noticias - Editar (Guardada).png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Editar%20(Guardada).png) | Estado y alerta de confirmación tras guardar la edición de una noticia. |
 | 🗑️ **Admin Noticias (Eliminar)** | [`Admin Noticias - Eliminar.png`](./PROTOTIPO/EXPORTADOS/Admin%20Noticias%20-%20Eliminar.png) | Diálogo de confirmación interactivo para dar de baja una noticia del catálogo. |
 
 ---
@@ -126,8 +129,10 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 ```text
 FRONTEND-GRUPO26-POLI/
 ├── PROTOTIPO/                      # Material de diseño UI/UX
-│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG (10 pantallas)
+│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG (12 pantallas)
+│   │   ├── Admin Noticias - Editar (Guardada).png
 │   │   ├── Admin Noticias - Eliminar.png
+│   │   ├── Admin Noticias - Nueva (Publicada).png
 │   │   ├── Admin Noticias - Nueva.png
 │   │   ├── Admin Noticias.png
 │   │   ├── Contact.png

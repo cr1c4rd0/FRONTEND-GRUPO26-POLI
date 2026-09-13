@@ -8962,6 +8962,1803 @@
           "name": "Footer"
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "RfgN2",
+      "x": 15600,
+      "y": 1206,
+      "name": "Admin Noticias - Nueva (Publicada)",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "s6LKuL",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84
+        },
+        {
+          "type": "frame",
+          "id": "XHRPj",
+          "name": "Breadcrumb Wrap",
+          "width": "fill_container",
+          "padding": [
+            32,
+            "$space-page-x",
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BxGm2",
+              "name": "Breadcrumb",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "o9zpWb",
+                  "name": "Crumb Admin",
+                  "fill": "$text-tertiary",
+                  "content": "Gestión de noticias",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "k1tY0",
+                  "name": "Crumb Sep",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "n5hEmM",
+                  "name": "Crumb Current",
+                  "fill": "$text-secondary",
+                  "content": "Nueva noticia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e3uuc",
+          "name": "Head Wrap",
+          "width": "fill_container",
+          "padding": [
+            16,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "DTz39",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Crear nueva noticia",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QI6sw",
+          "name": "Form Layout",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            0,
+            "$space-page-x",
+            64,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "faKxR",
+              "name": "News Form Card",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yHtxT",
+                  "name": "Field Título de la noticia",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VsCic",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Título de la noticia",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DjRzG",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xiTF5",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uwZgp",
+                  "name": "Field Categoria",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UVF5t",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Categoría",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oUTER",
+                      "name": "Category Pills",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "eEWao",
+                          "name": "Pill Inteligencia Artificial",
+                          "fill": "$accent-primary",
+                          "cornerRadius": 999,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "gvqbj",
+                              "name": "Pill Label",
+                              "fill": "#F4F6FB",
+                              "content": "Inteligencia Artificial",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iZHIh",
+                          "name": "Pill Hardware",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "l45jV",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Hardware",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BAQPi",
+                          "name": "Pill Software",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "N3W6V",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "h5ne3",
+                          "name": "Pill Ciberseguridad",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Nfg2e",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Ciberseguridad",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UMyul",
+                          "name": "Pill Startups",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FqaMS",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Startups",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wVg8q",
+                  "name": "Row Categoria Autor",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "t08A5",
+                      "name": "Field Autor",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c2Z6k",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Autor",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cOWjH",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "c2xPX1",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "María Rendón",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CSRB7",
+                      "name": "Field Tiempo de lectura",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dXF8j",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Tiempo de lectura",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "agTwB",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Q6OB7R",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "6 min",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I4EUxD",
+                  "name": "Row Imagen Lectura",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "F8RBx0",
+                      "name": "Field URL de la imagen",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ocN26",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "URL de la imagen",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GcQa2",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "F1033",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "https://images.unsplash.com/photo-1535378620166-273708d44e4c",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tk6We",
+                  "name": "Field Descripción breve",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eketZ",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Descripción breve",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nGnVp",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 70,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Hu9qf",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Un nuevo modelo reduce el consumo energético de los centros de datos gracias a técnicas de optimización de cargas de trabajo.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vaVMv",
+                  "name": "Field Contenido completo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t0zvG",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Contenido completo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nyTwl",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FmrAD",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Investigadores presentaron un modelo de inteligencia artificial capaz de optimizar en tiempo real la distribución de cargas de trabajo entre servidores, logrando una reducción del 40% en el consumo energético de los centros de datos sin afectar el rendimiento.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T0tqz",
+                  "name": "Form Actions",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "acBjw",
+                      "name": "Cancel Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VD4Yh",
+                          "name": "Cancel Label",
+                          "fill": "$text-secondary",
+                          "content": "Cancelar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hcyMS",
+                      "name": "Publish Button",
+                      "width": "fill_container",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "o7l5sL",
+                          "name": "Publish Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        },
+                        {
+                          "type": "text",
+                          "id": "T8hq5b",
+                          "name": "Publish Label",
+                          "fill": "#0A0D14",
+                          "content": "Publicar noticia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ttvWW",
+              "name": "Preview Col",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "q2idR",
+                  "name": "Preview Title",
+                  "fill": "$text-secondary",
+                  "content": "Vista previa de la tarjeta",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "pbu89",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Preview Card",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "TbiDO": {
+                      "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos"
+                    },
+                    "t176O": {
+                      "content": "Un nuevo modelo reduce el consumo energético de los centros de datos gracias a técnicas de optimización de cargas de trabajo."
+                    },
+                    "K1bIb1": {
+                      "content": "13 sep · 6 min"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "AODz3",
+                  "name": "Tip Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface-alt",
+                  "cornerRadius": "$radius-md",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "K1JJd",
+                      "name": "Tip Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "info",
+                      "library": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M1jKD",
+                      "name": "Tip Text",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Así se verá la noticia en el catálogo. Los cambios se reflejan al guardar.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C0cNx",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "UFnRz",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Publish Scrim",
+          "width": 1440,
+          "height": 1472,
+          "fill": "#05060AB3",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vyKz5",
+              "name": "Publish Modal",
+              "width": 440,
+              "fill": "$bg-elevated",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XR8zT",
+                  "name": "Icon Wrap",
+                  "width": 64,
+                  "height": 64,
+                  "fill": "#34D39922",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "pvVha",
+                      "name": "Success Icon",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "$tag-software"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Cc3HG",
+                  "name": "Modal Title",
+                  "fill": "$text-primary",
+                  "content": "¡Noticia publicada!",
+                  "textAlign": "center",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 21,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "S1GXe",
+                  "name": "Modal Desc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Tu noticia “Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos” ya está visible en el catálogo de SYNAPSE.TECH.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "qKfRV",
+                  "name": "Modal Buttons",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    10,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kKp1d",
+                      "name": "View Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K2PGmP",
+                          "name": "View Label",
+                          "fill": "$text-secondary",
+                          "content": "Ver noticia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n1NFK",
+                      "name": "Back Button",
+                      "width": "fill_container",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "v9tDC",
+                          "name": "Back Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "arrow-left",
+                          "library": "lucide",
+                          "fill": "#F4F6FB"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mhZbY",
+                          "name": "Back Label",
+                          "fill": "#F4F6FB",
+                          "content": "Volver al panel",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "S5nqsZ",
+      "x": 17160,
+      "y": 1206,
+      "name": "Admin Noticias - Editar (Guardada)",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "qedCG",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84
+        },
+        {
+          "type": "frame",
+          "id": "B7HuW9",
+          "name": "Breadcrumb Wrap",
+          "width": "fill_container",
+          "padding": [
+            32,
+            "$space-page-x",
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "I0U2NG",
+              "name": "Breadcrumb",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EN9fk",
+                  "name": "Crumb Admin",
+                  "fill": "$text-tertiary",
+                  "content": "Gestión de noticias",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "nhAMu",
+                  "name": "Crumb Sep",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "Wr6L7",
+                  "name": "Crumb Current",
+                  "fill": "$text-secondary",
+                  "content": "Editar noticia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "roX9R",
+          "name": "Head Wrap",
+          "width": "fill_container",
+          "padding": [
+            16,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "cYyBI",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Editar noticia",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i7K7Bm",
+          "name": "Form Layout",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            0,
+            "$space-page-x",
+            64,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "L04ab",
+              "name": "News Form Card",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cOqEB",
+                  "name": "Field Título de la noticia",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lOSkB",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Título de la noticia",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XHtKr",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "spb2M",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Detectan vulnerabilidad crítica en routers domésticos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kvvl1",
+                  "name": "Field Categoria",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DNiiq",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Categoría",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d7Qpax",
+                      "name": "Category Pills",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lFkD2",
+                          "name": "Pill Inteligencia Artificial",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u1IO0F",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Inteligencia Artificial",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HcFaE",
+                          "name": "Pill Hardware",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qOdQn",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Hardware",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WpsKF",
+                          "name": "Pill Software",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "b7iq9d",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zi0PW",
+                          "name": "Pill Ciberseguridad",
+                          "fill": "$tag-security",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "n349me",
+                              "name": "Pill Label",
+                              "fill": "#0A0D14",
+                              "content": "Ciberseguridad",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LIXLR",
+                          "name": "Pill Startups",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "W5GZpG",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Startups",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bYGM7",
+                  "name": "Row Categoria Autor",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qKLcI",
+                      "name": "Field Autor",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RaLMG",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Autor",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "r5pD3",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BASQI",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "Carlos Vélez",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v7Kj10",
+                      "name": "Field Tiempo de lectura",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DHP8R",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Tiempo de lectura",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "o3y1By",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "adhyN",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "5 min",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b2Swq",
+                  "name": "Row Imagen Lectura",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cYttV",
+                      "name": "Field URL de la imagen",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IAyAl",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "URL de la imagen",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UzZFg",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "OdDNw",
+                              "name": "Field Placeholder",
+                              "fill": "$text-primary",
+                              "content": "https://images.unsplash.com/photo-1614064745729-79e39d1b39b2",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NKCyt",
+                  "name": "Field Descripción breve",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sfEId",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Descripción breve",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v2KB0",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 70,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OMOMu",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Se identificó una falla de seguridad que permite el acceso remoto a routers domésticos sin actualizar.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a2izky",
+                  "name": "Field Contenido completo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tQel9",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Contenido completo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zmI3J",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sgHCG",
+                          "name": "Field Placeholder",
+                          "fill": "$text-primary",
+                          "content": "Investigadores en ciberseguridad revelaron una vulnerabilidad crítica presente en varios modelos de routers domésticos, que permite a atacantes remotos tomar control del dispositivo si no cuenta con el firmware actualizado. Se recomienda instalar el parche de seguridad disponible.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S1yorW",
+                  "name": "Form Actions",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TAqX9",
+                      "name": "Cancel Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H7dnH",
+                          "name": "Cancel Label",
+                          "fill": "$text-secondary",
+                          "content": "Cancelar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i6hjW",
+                      "name": "Publish Button",
+                      "width": "fill_container",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "M2W6EJ",
+                          "name": "Publish Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "save",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CKmVV",
+                          "name": "Publish Label",
+                          "fill": "#0A0D14",
+                          "content": "Guardar cambios",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VNUuS",
+              "name": "Preview Col",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GXl1x",
+                  "name": "Preview Title",
+                  "fill": "$text-secondary",
+                  "content": "Vista previa de la tarjeta",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "JfLup",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Preview Card",
+                  "width": "fill_container",
+                  "descendants": {
+                    "aVBsV": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1614064745729-79e39d1b39b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "L3GTTT": {
+                      "fill": "$tag-security"
+                    },
+                    "A9NULj": {
+                      "content": "Seguridad"
+                    },
+                    "TbiDO": {
+                      "content": "Detectan vulnerabilidad crítica en routers domésticos"
+                    },
+                    "t176O": {
+                      "content": "Se identificó una falla de seguridad que permite el acceso remoto a routers domésticos sin actualizar."
+                    },
+                    "K1bIb1": {
+                      "content": "10 sep · 5 min"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "HYeF8",
+                  "name": "Tip Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface-alt",
+                  "cornerRadius": "$radius-md",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "NCbBE",
+                      "name": "Tip Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "info",
+                      "library": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cItpv",
+                      "name": "Tip Text",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Así se verá la noticia en el catálogo. Los cambios se reflejan al guardar.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "COX90",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "LrqWW",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Save Scrim",
+          "width": 1440,
+          "height": 1472,
+          "fill": "#05060AB3",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "JU3kA",
+              "name": "Save Modal",
+              "width": 440,
+              "fill": "$bg-elevated",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GO4i6",
+                  "name": "Icon Wrap",
+                  "width": 64,
+                  "height": 64,
+                  "fill": "#34D39922",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "RKzwj",
+                      "name": "Success Icon",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "$tag-software"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "i75Go",
+                  "name": "Modal Title",
+                  "fill": "$text-primary",
+                  "content": "¡Cambios guardados!",
+                  "textAlign": "center",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 21,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "cGALY",
+                  "name": "Modal Desc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Los cambios en “Detectan vulnerabilidad crítica en routers domésticos” se actualizaron correctamente en el catálogo de SYNAPSE.TECH.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "k3lo3",
+                  "name": "Modal Buttons",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    10,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZHhT4",
+                      "name": "View Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uh9bB",
+                          "name": "View Label",
+                          "fill": "$text-secondary",
+                          "content": "Ver noticia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZtWf2",
+                      "name": "Back Button",
+                      "width": "fill_container",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "DSfIr",
+                          "name": "Back Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "arrow-left",
+                          "library": "lucide",
+                          "fill": "#F4F6FB"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ET76Y",
+                          "name": "Back Label",
+                          "fill": "#F4F6FB",
+                          "content": "Volver al panel",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
