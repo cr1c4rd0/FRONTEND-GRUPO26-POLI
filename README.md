@@ -159,16 +159,14 @@ Para mantener una integración fluida y ordenada:
 | Nombre Completo | Rol / Responsabilidad | Perfil / Contacto |
 | :--- | :--- | :--- |
 | **Cristian Ricardo** | *Líder de Proyecto / Frontend* | [@cr1c4rd0](https://github.com/cr1c4rd0) |
-| **[Nombre Integrante 2]** | *Frontend Developer* | [@usuario](https://github.com) |
-| **[Nombre Integrante 3]** | *Frontend Developer / UI-UX* | [@usuario](https://github.com) |
-| **[Nombre Integrante 4]** | *QA / Testing* | [@usuario](https://github.com) |
-| **[Nombre Integrante 5]** | *Frontend Developer* | [@usuario](https://github.com) |
+| **Juan Esteban Serna** | *Frontend Developer* | [@usuario](https://github.com) |
+| **Juan Manuel Saldarriaga** | *Frontend Developer / UI-UX* | [@usuario](https://github.com) |
 
 ---
 
 ## 🏫 Institución
 
 - **Institución:** Politécnico Grancolombiano
-- **Materia:** [Nombre de la asignatura]
-- **Tutor / Docente:** [Nombre del docente]
+- **Materia:** FRONTEND
+- **Tutor / Docente:** Jhon Olarte
 - **Año / Periodo:** 2026-I
