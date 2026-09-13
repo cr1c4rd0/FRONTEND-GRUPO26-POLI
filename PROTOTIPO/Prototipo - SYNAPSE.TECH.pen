@@ -133,6 +133,16 @@
               "fontFamily": "$font-body",
               "fontSize": 14,
               "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "gzRzi",
+              "name": "Nav Admin",
+              "fill": "$text-secondary",
+              "content": "Admin",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
             }
           ]
         },
@@ -4084,6 +4094,4869 @@
         },
         {
           "id": "r2DU67",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QHeB6",
+      "x": 7800,
+      "y": 1206,
+      "name": "Admin Noticias",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "uJek2",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84
+        },
+        {
+          "type": "frame",
+          "id": "KRZYf",
+          "name": "Admin Head",
+          "width": "fill_container",
+          "padding": [
+            40,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uhPvS",
+              "name": "Head Text Col",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d78Pf",
+                  "name": "Head Eyebrow",
+                  "fill": "$accent-secondary",
+                  "content": "PANEL DE ADMINISTRACIÓN",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "NwPA6",
+                  "name": "Head Title",
+                  "fill": "$text-primary",
+                  "content": "Gestión de noticias",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "REpua",
+                  "name": "Head Sub",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Crea, edita y elimina las noticias publicadas en SYNAPSE.TECH.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "htv5o",
+              "name": "New Button",
+              "fill": "$accent-primary",
+              "cornerRadius": "$radius-md",
+              "gap": 8,
+              "padding": [
+                13,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "j0pGhV",
+                  "name": "New Icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "#F4F6FB"
+                },
+                {
+                  "type": "text",
+                  "id": "FCz1s",
+                  "name": "New Label",
+                  "fill": "#F4F6FB",
+                  "content": "Nueva noticia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "n0wcq",
+          "name": "Table Wrap",
+          "width": "fill_container",
+          "padding": [
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "S9ScF",
+              "name": "News Table",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IDvxs",
+                  "name": "Table Head Row",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A5A2rW",
+                      "name": "Col Noticia",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "NOTICIA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "PvIJs",
+                      "name": "Col Categoria",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 170,
+                      "content": "CATEGORÍA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "j8ORr1",
+                      "name": "Col Fecha",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 110,
+                      "content": "FECHA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "FFCDe",
+                      "name": "Col Acciones",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 96,
+                      "content": "ACCIONES",
+                      "textAlign": "right",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Vax7H",
+                  "name": "Row Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Lx8SK",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Q1y2D",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e0bq3p",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "k2oYwW",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rdiBK",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-01",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LfeEZ",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "H9kni",
+                          "name": "Tag",
+                          "fill": "$tag-ia",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Q8D7yi",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Inteligencia Artificial",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ayxJN",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "12 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k2TJfK",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "paIQE",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "N9DnHz",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Hpsb0",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "s9MI9",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N6HLiu",
+                  "name": "Row Bootstrap 6 llega con soporte nativo para modo oscuro",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OmU8c",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "nRF5u",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1649451844835-7f9d1dc6b0bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fDija",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dbtV3",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Bootstrap 6 llega con soporte nativo para modo oscuro",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Qjtm3",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-02",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "B8UQm",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "s35Tw",
+                          "name": "Tag",
+                          "fill": "$tag-software",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QsOHc",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "h70Fgs",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "10 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tug71",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "PtX6J",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "g8QZB",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VVZU1",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "UWBfa",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "asHJ5",
+                  "name": "Row Detectan vulnerabilidad crítica en routers domésticos",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jl4qG",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tz6Wo",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1614064745729-79e39d1b39b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Nx9pZ",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "gWR2B",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Detectan vulnerabilidad crítica en routers domésticos",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "sLYFc",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-03",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PW9x6",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "XIT4K",
+                          "name": "Tag",
+                          "fill": "$tag-security",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Kdh29",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Ciberseguridad",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "eq72C",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "10 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p94lU",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "KyIWM",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "WOSRF",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "H4QeY",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "RiUuK",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b3AABA",
+                  "name": "Row Startup colombiana de robótica cierra ronda de $8M",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TNkcp",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "u4Rqz",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1661882217431-b64b303fb1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Qinms",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qeF8X",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Startup colombiana de robótica cierra ronda de $8M",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "RC8xu",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-04",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hrql9",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yQT34",
+                          "name": "Tag",
+                          "fill": "$tag-startups",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u2UjF",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Startups",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "q9qKa",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "9 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aPKcm",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pKuGz",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "y88wM4",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tT5j7",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "N194V",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TbqwA",
+                  "name": "Row Nuevo chip promete duplicar la autonomía de laptops",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fEeBM",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oGxXd",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1672307613484-3254a04651fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BszBK",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Mc9xO",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Nuevo chip promete duplicar la autonomía de laptops",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "nQQRg",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-05",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XRpYE",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "TcBCB",
+                          "name": "Tag",
+                          "fill": "$tag-hardware",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "djkcg",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Hardware",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "m5czd",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "9 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Kvidw",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "EwgXW",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "VMRUR",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NstIR",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "z5cFN",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DrTbo",
+                  "name": "Row Lanzan framework open source para apps offline-first",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s0UP4M",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lbm8W",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dx53h",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tOw1O",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Lanzan framework open source para apps offline-first",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "uQXhj",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-06",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eErsp",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Tegx3",
+                          "name": "Tag",
+                          "fill": "$tag-software",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lq4FI",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "hdQDU",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "8 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iUwpT",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jkaXn",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "eVyrY",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iDf38",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "F9TqY",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MiOG7",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 56
+        },
+        {
+          "id": "uTkWg",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zHaFs",
+      "x": 9360,
+      "y": 1206,
+      "name": "Admin Noticias - Nueva",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "h9MqF",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84
+        },
+        {
+          "type": "frame",
+          "id": "folrP",
+          "name": "Breadcrumb Wrap",
+          "width": "fill_container",
+          "padding": [
+            32,
+            "$space-page-x",
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "FhmB2",
+              "name": "Breadcrumb",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "et1OQ",
+                  "name": "Crumb Admin",
+                  "fill": "$text-tertiary",
+                  "content": "Gestión de noticias",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "HgEZX",
+                  "name": "Crumb Sep",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "dhDy8",
+                  "name": "Crumb Current",
+                  "fill": "$text-secondary",
+                  "content": "Nueva noticia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iAwnn",
+          "name": "Head Wrap",
+          "width": "fill_container",
+          "padding": [
+            16,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "woY7A",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Crear nueva noticia",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a97p1c",
+          "name": "Form Layout",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            0,
+            "$space-page-x",
+            64,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "c9NTD",
+              "name": "News Form Card",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "B0bZgB",
+                  "name": "Field Título de la noticia",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qUpbe",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Título de la noticia",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p4Ru2",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QyXKk",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "Ej. Un nuevo modelo de IA reduce el consumo energético",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n8AzFR",
+                  "name": "Field Categoria",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bS6Bp",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Categoría",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tq8KC",
+                      "name": "Category Pills",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WM4Le",
+                          "name": "Pill Inteligencia Artificial",
+                          "fill": "$accent-primary",
+                          "cornerRadius": 999,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hGFXv",
+                              "name": "Pill Label",
+                              "fill": "#F4F6FB",
+                              "content": "Inteligencia Artificial",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TLVgb",
+                          "name": "Pill Hardware",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QSvnr",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Hardware",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pDhEP",
+                          "name": "Pill Software",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "eAkza",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KAguP",
+                          "name": "Pill Ciberseguridad",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Tfbl0",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Ciberseguridad",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CDFYv",
+                          "name": "Pill Startups",
+                          "fill": "$bg-page",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UZKwq",
+                              "name": "Pill Label",
+                              "fill": "$text-secondary",
+                              "content": "Startups",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "f5sM7R",
+                  "name": "Row Categoria Autor",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LdIxM",
+                      "name": "Field Autor",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nYGq9",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Autor",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fKjjF",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ImAxo",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "Ej. María Rendón",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DuxZ9",
+                      "name": "Field Tiempo de lectura",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CMLwg",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Tiempo de lectura",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vOF4A",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kc568",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "Ej. 5 min",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O0LxH",
+                  "name": "Row Imagen Lectura",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xdSAN",
+                      "name": "Field URL de la imagen",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A6GjD",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "URL de la imagen",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ofdU9",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WDZGd",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "https://...",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MgKcF",
+                  "name": "Field Descripción breve",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LoSIu",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Descripción breve",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OcAGu",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 70,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NSIT6",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "Resumen corto que aparecerá en la tarjeta de la noticia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q2vS8",
+                  "name": "Field Contenido completo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v7VQj",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Contenido completo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qdAqa",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iWLTs",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "Escribe el cuerpo completo de la noticia...",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qVitU",
+                  "name": "Form Actions",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d5Klw2",
+                      "name": "Cancel Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Q32pb",
+                          "name": "Cancel Label",
+                          "fill": "$text-secondary",
+                          "content": "Cancelar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QX2HO",
+                      "name": "Publish Button",
+                      "width": "fill_container",
+                      "fill": "$accent-primary",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "hSK3B",
+                          "name": "Publish Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fqbqn",
+                          "name": "Publish Label",
+                          "fill": "#0A0D14",
+                          "content": "Publicar noticia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QXWNU",
+              "name": "Preview Col",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k4dnH",
+                  "name": "Preview Title",
+                  "fill": "$text-secondary",
+                  "content": "Vista previa de la tarjeta",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "r6bKf",
+                  "type": "ref",
+                  "ref": "dyJCE",
+                  "name": "Preview Card",
+                  "width": "fill_container"
+                },
+                {
+                  "type": "frame",
+                  "id": "UdHoM",
+                  "name": "Tip Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface-alt",
+                  "cornerRadius": "$radius-md",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "vrnC4",
+                      "name": "Tip Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "info",
+                      "library": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cZzFb",
+                      "name": "Tip Text",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Así se verá la noticia en el catálogo. Los cambios se reflejan al guardar.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "xqmsH",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gY5mR",
+      "x": 10920,
+      "y": 1206,
+      "name": "Admin Noticias - Eliminar",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "qw3Hn",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84
+        },
+        {
+          "type": "frame",
+          "id": "NDmPs",
+          "name": "Admin Head",
+          "width": "fill_container",
+          "padding": [
+            40,
+            "$space-page-x",
+            32,
+            "$space-page-x"
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FILUi",
+              "name": "Head Text Col",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NZuzj",
+                  "name": "Head Eyebrow",
+                  "fill": "$accent-secondary",
+                  "content": "PANEL DE ADMINISTRACIÓN",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "UwTa9",
+                  "name": "Head Title",
+                  "fill": "$text-primary",
+                  "content": "Gestión de noticias",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "a9xwQ",
+                  "name": "Head Sub",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Crea, edita y elimina las noticias publicadas en SYNAPSE.TECH.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QIHwq",
+              "name": "New Button",
+              "fill": "$accent-primary",
+              "cornerRadius": "$radius-md",
+              "gap": 8,
+              "padding": [
+                13,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "VCEko",
+                  "name": "New Icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "#F4F6FB"
+                },
+                {
+                  "type": "text",
+                  "id": "DSNqZ",
+                  "name": "New Label",
+                  "fill": "#F4F6FB",
+                  "content": "Nueva noticia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G795RB",
+          "name": "Table Wrap",
+          "width": "fill_container",
+          "padding": [
+            0,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mX3Xo",
+              "name": "News Table",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T4rHu",
+                  "name": "Table Head Row",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kQu6G",
+                      "name": "Col Noticia",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "NOTICIA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "cOGJY",
+                      "name": "Col Categoria",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 170,
+                      "content": "CATEGORÍA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "h0tqxu",
+                      "name": "Col Fecha",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 110,
+                      "content": "FECHA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "boxfl",
+                      "name": "Col Acciones",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": 96,
+                      "content": "ACCIONES",
+                      "textAlign": "right",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "koq47",
+                  "name": "Row Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ibeTe",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cQn7s",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "JF6jX",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h3xHl",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "e741wQ",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-01",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k3lSIk",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "aS7VD",
+                          "name": "Tag",
+                          "fill": "$tag-ia",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WuF9D",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Inteligencia Artificial",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z3bOd",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "12 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RER0X",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "p0oXx7",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "n0ZW5",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "c12NyP",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "fyeRD",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GpOja",
+                  "name": "Row Bootstrap 6 llega con soporte nativo para modo oscuro",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ifOhg",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "L6NI2b",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1649451844835-7f9d1dc6b0bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kJhJb",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LIySh",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Bootstrap 6 llega con soporte nativo para modo oscuro",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "i8rP2K",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-02",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u0RrPi",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HsFCB",
+                          "name": "Tag",
+                          "fill": "$tag-software",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QNrgg",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "sR4hz",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "10 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p70qGi",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cWiv0",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "J23Oh",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "di38L",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "iLTDo",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NoTzb",
+                  "name": "Row Detectan vulnerabilidad crítica en routers domésticos",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pgJLP",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "d3OTI",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1614064745729-79e39d1b39b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KA413",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Tifs7",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Detectan vulnerabilidad crítica en routers domésticos",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Vy2ZU",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-03",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hxpyS",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o43wUf",
+                          "name": "Tag",
+                          "fill": "$tag-security",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ki7xO",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Ciberseguridad",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y6ASqA",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "10 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V2tssW",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S3JrD",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "T2YqOW",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ET4WV",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "xGgkf",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cGKgG",
+                  "name": "Row Startup colombiana de robótica cierra ronda de $8M",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J0VRP",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oDaFF",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1661882217431-b64b303fb1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fnFLl",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u7Ykl",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Startup colombiana de robótica cierra ronda de $8M",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "fj4Hn",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-04",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gvTYv",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cwdkN",
+                          "name": "Tag",
+                          "fill": "$tag-startups",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h0PJ9",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Startups",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ofn6i",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "9 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xDMDG",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qFWKx",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "rvDuH",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VtoOz",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "D3SPsL",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KjxLq",
+                  "name": "Row Nuevo chip promete duplicar la autonomía de laptops",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c63sA",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "nczJy",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1672307613484-3254a04651fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k0JvmZ",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EMyjq",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Nuevo chip promete duplicar la autonomía de laptops",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tCIWL",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-05",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F7bc7",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ZLoYl",
+                          "name": "Tag",
+                          "fill": "$tag-hardware",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "U1Ykk",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Hardware",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kd96V",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "9 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dpquG",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v5nGZY",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "tjLLF",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "t5D9jD",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "L7pc7",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C0j8ZB",
+                  "name": "Row Lanzan framework open source para apps offline-first",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pWDn3",
+                      "name": "Main Col",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AK5WU",
+                          "name": "Thumb",
+                          "width": 52,
+                          "height": 52,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjIxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": "$radius-md"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DKNyC",
+                          "name": "Title Col",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NNTAF",
+                              "name": "Row Title",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Lanzan framework open source para apps offline-first",
+                              "lineHeight": 1.3,
+                              "fontFamily": "$font-heading",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rXLCc",
+                              "name": "Row Id",
+                              "fill": "$text-tertiary",
+                              "content": "ID: NEWS-06",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pQf9N",
+                      "name": "Category Col",
+                      "width": 170,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "uFEjr",
+                          "name": "Tag",
+                          "fill": "$tag-software",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "G5CieG",
+                              "name": "Tag Label",
+                              "fill": "#0A0D14",
+                              "content": "Software",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TuXJ6",
+                      "name": "Date Col",
+                      "fill": "$text-secondary",
+                      "content": "8 sep 2026",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Kb1jC",
+                      "name": "Actions Col",
+                      "width": 96,
+                      "gap": 8,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "alXmt",
+                          "name": "Edit Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$bg-elevated",
+                          "cornerRadius": "$radius-md",
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "j17OB",
+                              "name": "Edit Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "pencil",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LZtPS",
+                          "name": "Delete Button",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "#F8717122",
+                          "cornerRadius": "$radius-md",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "clbtL",
+                              "name": "Delete Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ERY0J",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 56
+        },
+        {
+          "id": "gpkHG",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "MaGPh",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Delete Scrim",
+          "width": 1440,
+          "height": 1235,
+          "fill": "#05060AB3",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "f4gHUh",
+              "name": "Delete Modal",
+              "width": 440,
+              "fill": "$bg-elevated",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XMDfl",
+                  "name": "Icon Wrap",
+                  "width": 64,
+                  "height": 64,
+                  "fill": "#F8717122",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "gQ7Od",
+                      "name": "Warn Icon",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "trash-2",
+                      "library": "lucide",
+                      "fill": "$tag-security"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "qEls7",
+                  "name": "Modal Title",
+                  "fill": "$text-primary",
+                  "content": "¿Eliminar esta noticia?",
+                  "textAlign": "center",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 21,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "aO4Bu",
+                  "name": "Modal Desc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Esta acción no se puede deshacer. Se eliminará permanentemente la noticia “Detectan vulnerabilidad crítica en routers domésticos” del catálogo.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "EIi5M",
+                  "name": "Modal Buttons",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    10,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D2cY2",
+                      "name": "Cancel Button",
+                      "width": "fill_container",
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XApyM",
+                          "name": "Cancel Label",
+                          "fill": "$text-secondary",
+                          "content": "Cancelar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p1D8z",
+                      "name": "Confirm Delete Button",
+                      "width": "fill_container",
+                      "fill": "$tag-security",
+                      "cornerRadius": 10,
+                      "gap": 8,
+                      "padding": [
+                        13,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "rfHQF",
+                          "name": "Delete Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "trash-2",
+                          "library": "lucide",
+                          "fill": "#0A0D14"
+                        },
+                        {
+                          "type": "text",
+                          "id": "k1SZr",
+                          "name": "Delete Label",
+                          "fill": "#0A0D14",
+                          "content": "Eliminar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WyoZa",
+      "x": 12480,
+      "y": 1206,
+      "name": "Contacto - Enviado",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "HI11Z",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "b0CDQ",
+          "name": "Contact Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            40,
+            "$space-page-x",
+            8,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "WhyDH",
+              "name": "Head Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "CONTÁCTANOS",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "Rnn9D",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Hablemos de tecnología",
+              "fontFamily": "$font-heading",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "z5JSQQ",
+              "name": "Head Sub",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "¿Tienes una noticia, sugerencia o quieres colaborar con SYNAPSE.TECH? Completa el formulario y te responderemos lo antes posible.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mTECs",
+          "name": "Contact Layout",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            8,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "MBuzu",
+              "name": "Contact Success",
+              "width": "fill_container",
+              "height": 454,
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "adb7j",
+                  "name": "Success Icon Wrap",
+                  "width": 72,
+                  "height": 72,
+                  "fill": "#34D39922",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "qkduF",
+                      "name": "Success Icon",
+                      "width": 32,
+                      "height": 32,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "$tag-software"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "A2OSYt",
+                  "name": "Success Title",
+                  "fill": "$text-primary",
+                  "content": "¡Mensaje enviado!",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "AfgnP",
+                  "name": "Success Desc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 420,
+                  "content": "Gracias por escribirnos. Nuestro equipo editorial revisará tu mensaje y te responderá al correo indicado en menos de 24 horas.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Sp3hK",
+                  "name": "Send Another Button",
+                  "fill": "$accent-primary",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "padding": [
+                    13,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "mnwL0",
+                      "name": "Again Icon",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "rotate-ccw",
+                      "library": "lucide",
+                      "fill": "#F4F6FB"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d8RHs",
+                      "name": "Again Label",
+                      "fill": "#F4F6FB",
+                      "content": "Enviar otro mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kI4De",
+              "name": "Contact Info",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X23Wim",
+                  "name": "Info Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NcbfM",
+                      "name": "Info Card Title",
+                      "fill": "$text-primary",
+                      "content": "Información de contacto",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wHF5g",
+                      "name": "Info Row Correo",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qrHfQ",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "C6eT8",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "mail",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "M4oiz",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "sYYRC",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Correo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ySn1c",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "redaccion@synapse.tech",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h8UW4",
+                      "name": "Info Row Teléfono",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lKt2S",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Avnb8",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "phone",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "z7vr1",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "er5iw",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Teléfono",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "MBgpj",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "+57 300 123 4567",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UzSqW",
+                      "name": "Info Row Ubicación",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "B4gYCz",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Gvso1",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "map-pin",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kH5Zy",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xRrSk",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Ubicación",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KHlKr",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Bogotá, Colombia",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "saTQm",
+                      "name": "Info Row Horario",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Kd1u3",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "wGphp",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "clock-3",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "g5RxF9",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "d4Spi",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Horario",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qBJTL",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Lun - Vie · 8:00 - 18:00",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ieYyB",
+                  "name": "Social Card",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$accent-primary",
+                        "position": 0
+                      },
+                      {
+                        "color": "$accent-secondary",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": "$radius-lg",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k99E6",
+                      "name": "Social Card Title",
+                      "fill": "#0A0D14",
+                      "content": "Síguenos",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BcmXY",
+                      "name": "Social Card Sub",
+                      "fill": "#0A0D14CC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Entérate primero de las últimas noticias tech.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dxEg1",
+                      "name": "Social Icons Row",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "d8iv5",
+                          "name": "Soc twitter",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "UkAl6",
+                              "name": "Soc Icon twitter",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "twitter",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kBrR0",
+                          "name": "Soc linkedin",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "BlzGI",
+                              "name": "Soc Icon linkedin",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "linkedin",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lgr1L",
+                          "name": "Soc github",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Lzh6v",
+                              "name": "Soc Icon github",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "github",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Z71UV",
+                          "name": "Soc youtube",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "XCftP",
+                              "name": "Soc Icon youtube",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "youtube",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fIO9C",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 40
+        },
+        {
+          "id": "E7E2Pi",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "w8qNEO",
+      "x": 14040,
+      "y": 1206,
+      "name": "Contacto - Validación",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Zz7td",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "LZFDw",
+          "name": "Contact Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            40,
+            "$space-page-x",
+            8,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "zjQa8",
+              "name": "Head Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "CONTÁCTANOS",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "IUahV",
+              "name": "Head Title",
+              "fill": "$text-primary",
+              "content": "Hablemos de tecnología",
+              "fontFamily": "$font-heading",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "beCUP",
+              "name": "Head Sub",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "¿Tienes una noticia, sugerencia o quieres colaborar con SYNAPSE.TECH? Completa el formulario y te responderemos lo antes posible.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ogChz",
+          "name": "Contact Layout",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            8,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "oBi01",
+              "name": "Contact Form",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GwDRx",
+                  "name": "Row Name Email",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jzXP9",
+                      "name": "Field Nombre completo",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jn0ys",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Nombre completo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "u1Jcv9",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$tag-security",
+                          "strokeWidth": 1.5,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VbVcG",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Yyukw",
+                          "name": "Error Row",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "C6mcqo",
+                              "name": "Error Icon",
+                              "width": 13,
+                              "height": 13,
+                              "icon": "circle-alert",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            },
+                            {
+                              "type": "text",
+                              "id": "b2QPVg",
+                              "name": "Error Text",
+                              "fill": "$tag-security",
+                              "content": "Este campo es obligatorio.",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W6UWnV",
+                      "name": "Field Correo electrónico",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XinUT",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Correo electrónico",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ucM6V",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$tag-security",
+                          "strokeWidth": 1.5,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T8hbI",
+                              "name": "Field Placeholder",
+                              "fill": "$text-tertiary",
+                              "content": "juan.perez@correo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "V8PgN",
+                          "name": "Error Row",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "G3R6ih",
+                              "name": "Error Icon",
+                              "width": 13,
+                              "height": 13,
+                              "icon": "circle-alert",
+                              "library": "lucide",
+                              "fill": "$tag-security"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Gto6Z",
+                              "name": "Error Text",
+                              "fill": "$tag-security",
+                              "content": "Ingresa un correo electrónico válido.",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lbOHZ",
+                  "name": "Field Asunto",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Nashy",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Asunto",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "O6yrf5",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "su1BJ",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "¿Sobre qué quieres hablar?",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bu9Cq",
+                  "name": "Field Mensaje",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tRNrf",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GHHVg",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BHUKh",
+                          "name": "Field Placeholder",
+                          "fill": "$text-tertiary",
+                          "content": "Escribe tu mensaje aquí...",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KNU51",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "fill": "$accent-primary",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XFjdO",
+                      "name": "Submit Label",
+                      "fill": "#0A0D14",
+                      "content": "Enviar mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "F3jtPa",
+                      "name": "Submit Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "send",
+                      "library": "lucide",
+                      "fill": "#0A0D14"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "owntD",
+              "name": "Contact Info",
+              "width": 380,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gcR3X",
+                  "name": "Info Card",
+                  "width": "fill_container",
+                  "fill": "$bg-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ONyXp",
+                      "name": "Info Card Title",
+                      "fill": "$text-primary",
+                      "content": "Información de contacto",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JFSTO",
+                      "name": "Info Row Correo",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "C6wSHi",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "w0EiNO",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "mail",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "x4R3Gn",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PwI8t",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Correo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ycMLF",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "redaccion@synapse.tech",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YqmR1",
+                      "name": "Info Row Teléfono",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "h3XX6G",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "E9b10M",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "phone",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ePhXT",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "v1K2bs",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Teléfono",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qZXb1",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "+57 300 123 4567",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nn4rV",
+                      "name": "Info Row Ubicación",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "nQnxs",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "KhQGp",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "map-pin",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "xkdyX",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lJcha",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Ubicación",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ayryM",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Bogotá, Colombia",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PlQdr",
+                      "name": "Info Row Horario",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tOA3O",
+                          "name": "Icon Wrap",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "#7C5CFF22",
+                          "cornerRadius": 10,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "FiHDz",
+                              "name": "Row Icon",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "clock-3",
+                              "library": "lucide",
+                              "fill": "$accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YCpJV",
+                          "name": "Row Text Col",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "scb7S",
+                              "name": "Row Label",
+                              "fill": "$text-tertiary",
+                              "content": "Horario",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "DLGCt",
+                              "name": "Row Value",
+                              "fill": "$text-primary",
+                              "content": "Lun - Vie · 8:00 - 18:00",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WCOhw",
+                  "name": "Social Card",
+                  "width": "fill_container",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$accent-primary",
+                        "position": 0
+                      },
+                      {
+                        "color": "$accent-secondary",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": "$radius-lg",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VDjLZ",
+                      "name": "Social Card Title",
+                      "fill": "#0A0D14",
+                      "content": "Síguenos",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uH2NL",
+                      "name": "Social Card Sub",
+                      "fill": "#0A0D14CC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Entérate primero de las últimas noticias tech.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dAXYP",
+                      "name": "Social Icons Row",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jRX6E",
+                          "name": "Soc twitter",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "nFmuZ",
+                              "name": "Soc Icon twitter",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "twitter",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ciiNA",
+                          "name": "Soc linkedin",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "t3Jh2E",
+                              "name": "Soc Icon linkedin",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "linkedin",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eukpw",
+                          "name": "Soc github",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "WIWEK",
+                              "name": "Soc Icon github",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "github",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ftlAR",
+                          "name": "Soc youtube",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#0A0D1433",
+                          "cornerRadius": 9,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "EI6mm",
+                              "name": "Soc Icon youtube",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "youtube",
+                              "library": "lucide",
+                              "fill": "#0A0D14"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XbKrB",
+          "name": "Spacer",
+          "width": "fill_container",
+          "height": 40
+        },
+        {
+          "id": "itDpt",
           "type": "ref",
           "ref": "KAG3B",
           "name": "Footer"

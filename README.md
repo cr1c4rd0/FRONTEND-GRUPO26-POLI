@@ -1,10 +1,13 @@
-# 🚀 FRONTEND - Grupo 26 (Poli)
+# 🚀 SYNAPSE.TECH - Periódico Digital de Noticias Tecnológicas
 
-> Aplicación web desarrollada por el **Grupo 26** para el proyecto académico del Politécnico Grancolombiano.
+> Aplicación web tipo periódico interactivo desarrollada por el **Grupo 26** para el proyecto académico de la asignatura **FRONTEND** en el **Politécnico Grancolombiano**.
 
 [![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)](#)
-[![Node.js](https://img.shields.io/badge/Node.js-v18%2B-green?style=for-the-badge&logo=node.js)](#)
-[![Licencia](https://img.shields.io/badge/Licencia-Educativa-blue?style=for-the-badge)](#)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
+[![Angular](https://img.shields.io/badge/Angular-Básico%20(Planeado)-DD0031?style=for-the-badge&logo=angular&logoColor=white)](#)
 
 ---
 
@@ -12,11 +15,10 @@
 
 - [Descripción del Proyecto](#-descripción-del-proyecto)
 - [Características Principales](#-características-principales)
+- [Diseño y Prototipado (UI/UX)](#-diseño-y-prototipado-uiux)
 - [Tecnologías Utilizadas](#️-tecnologías-utilizadas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Requisitos Previos](#-requisitos-previos)
-- [Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
-- [Variables de Entorno](#-variables-de-entorno)
+- [Visualización y Puesta en Marcha](#-visualización-y-puesta-en-marcha)
 - [Integración con Backend](#-integración-con-backend)
 - [Flujo de Trabajo y Convenciones Git](#-flujo-de-trabajo-y-convenciones-git)
 - [Integrantes del Grupo 26](#-integrantes-del-grupo-26)
@@ -26,69 +28,118 @@
 
 ## 📖 Descripción del Proyecto
 
-*(Breve resumen de 1 a 2 párrafos explicando de qué trata la plataforma, cuál es la problemática que resuelve y a qué usuarios va dirigida).*
+**SYNAPSE.TECH** es una plataforma web tipo periódico digital enfocada en el ecosistema tecnológico. Su objetivo es brindar a los usuarios un espacio moderno, intuitivo y dinámico donde puedan explorar las últimas novedades del mundo de la tecnología, tendencias de desarrollo, inteligencia artificial y servicios digitales.
 
-> **Nota:** Esta aplicación frontend proporciona una interfaz intuitiva, moderna y responsiva que interactúa con los servicios y endpoints provistos por el backend del proyecto.
+La aplicación permite navegar entre diferentes artículos y categorías, visualizar información detallada de cada noticia e interactuar mediante funcionalidades clave como el guardado en favoritos y formularios de contacto. En esta etapa inicial, el proyecto se enfoca en evidenciar sólidos fundamentos de maquetación semántica con **HTML5**, diseño responsivo con **CSS3** apoyado en **Bootstrap 5.3** y dinamismo del lado del cliente con **JavaScript**, con una arquitectura orientada a la futura adopción y migración a **Angular**.
 
 ---
 
 ## ✨ Características Principales
 
-- [ ] **Autenticación y Autorización:** Inicio de sesión, registro y control de acceso a rutas protegidas.
-- [ ] **Diseño Responsivo:** Adaptabilidad a dispositivos móviles, tablets y pantallas de escritorio.
-- [ ] **Gestión de Estado:** Manejo predecible y centralizado de la información en la aplicación.
-- [ ] **Consumo de API REST:** Peticiones HTTP asíncronas con manejo de errores y estados de carga.
-- [ ] **Validación de Formularios:** Retroalimentación amigable y validaciones en tiempo real.
+### 1. 📰 Visualización de Noticias (Catálogo)
+Los usuarios disponen de un catálogo dinámico presentado en formato de tarjetas (*cards*), donde cada elemento incluye:
+- **Imagen:** Recurso visual representativo de la noticia o avance tecnológico.
+- **Nombre / Título:** Encabezado descriptivo de la noticia.
+- **Descripción breve:** Resumen introductorio del contenido.
+- **Botón de acción:** Enlace directo (*"Ver más"*) hacia la vista de detalle.
+
+### 2. 🔍 Detalle de la Noticia
+Vista individual y profunda para cada artículo que presenta:
+- **Información completa:** Contenido íntegro de la noticia y datos contextuales.
+- **Imagen representativa:** Cabecera o galería visual en alta definición.
+- **Botones de interacción:** Opciones para añadir el artículo a favoritos o navegar hacia el formulario de contacto.
+
+### 3. ⭐ Gestión de Favoritos (Interacción del Usuario)
+Espacio personalizado donde los usuarios pueden interactuar con el contenido:
+- **Guardar en favoritos:** Marcado dinámico de artículos de interés desde las cards o la vista de detalle.
+- **Lista personalizada:** Consulta de la colección de noticias favoritas guardadas.
+- **Persistencia en el cliente:** Implementado mediante `localStorage` o `sessionStorage` para conservar las selecciones sin necesidad de base de datos externa.
+
+### 4. 🏠 Página de Inicio (Home)
+Estructura de aterrizaje completa y moderna compuesta por:
+- **Header:** Menú de navegación accesible e intuitivo.
+- **Sección de bienvenida:** Mensaje de introducción y propuesta de valor de SYNAPSE.TECH.
+- **Noticias destacadas:** Vitrina principal con los artículos más relevantes del momento.
+- **Llamados a la acción (Call-to-Action):** Botones orientados a explorar el catálogo, guardar favoritos o contactar.
+- **Footer:** Pie de página con información general del proyecto, enlaces institucionales y créditos.
+
+### 5. ✉️ Página de Contacto
+Canal de comunicación que incluye un formulario interactivo con:
+- **Validaciones básicas:** Verificación en tiempo real de campos obligatorios y formato de correo electrónico válido.
+- **Mensaje de confirmación:** Notificación visual al usuario tras el envío exitoso del formulario.
+
+### 6. ⚙️ Gestión Básica de Noticias (Mini CRUD)
+Panel o funcionalidad administrativa básica que permite mantener actualizado el catálogo:
+- **Crear nuevas noticias:** Formulario para agregar nuevos artículos con su respectivo título, descripción, imagen y contenido.
+- **Eliminar noticias existentes:** Opción para remover noticias del catálogo activo.
+
+---
+
+## 🎨 Diseño y Prototipado (UI/UX)
+
+La concepción visual y el flujo de navegación de la aplicación fueron planificados previamente en la carpeta [`PROTOTIPO/`](./PROTOTIPO), asegurando coherencia visual y una óptima experiencia de usuario.
+
+### ✒️ Herramienta Utilizada: [Pen (pen.dev)](https://www.pen.dev/)
+Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó **[Pen](https://www.pen.dev/)**, una herramienta moderna, minimalista y colaborativa de diseño de interfaces y prototipado rápido enfocada en desarrolladores y diseñadores. 
+
+**Características destacadas de Pen:**
+- **Enfoque ágil:** Permite bosquejar interfaces, componentes y flujos de usuario de manera limpia y sin sobrecargas complejas.
+- **Formato `.pen` nativo:** Almacena todos los lienzos, capas y elementos de diseño en un archivo único y ligero (`.pen`), ideal para versionar directamente en repositorios Git.
+- **Exportación de alta fidelidad:** Facilita la generación de vistas y maquetas en formatos de imagen estándar como PNG para documentación y presentación.
+
+### 📐 Archivos y Vistas del Prototipo
+- **Archivo editable:** [`PROTOTIPO/Prototipo - SYNAPSE.TECH.pen`](./PROTOTIPO/Prototipo%20-%20SYNAPSE.TECH.pen) — Archivo fuente con el diseño completo realizado en **Pen**.
+- **Vistas exportadas:** Disponibles en alta resolución dentro de [`PROTOTIPO/EXPORTADOS/`](./PROTOTIPO/EXPORTADOS/):
+  - 🏠 **Home:** [`Home.png`](./PROTOTIPO/EXPORTADOS/Home.png) — Portada principal con destacados y secciones de noticias.
+  - 📄 **Detalle de Noticia:** [`News Detail.png`](./PROTOTIPO/EXPORTADOS/News%20Detail.png) — Lectura y cuerpo completo del artículo.
+  - ⭐ **Favoritos:** [`Favorites Page.png`](./PROTOTIPO/EXPORTADOS/Favorites%20Page.png) — Listado interactivo de artículos guardados.
+  - ✉️ **Contacto:** [`Contact.png`](./PROTOTIPO/EXPORTADOS/Contact.png) — Formulario de atención y comunicación.
+  - 👤 **Perfil:** [`Profile.png`](./PROTOTIPO/EXPORTADOS/Profile.png) — Panel de usuario y configuración.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje / Framework:** [React / Angular / Vue / Vanilla JS]
-- **Empaquetador / Build Tool:** [Vite / Webpack / Next.js]
-- **Estilos:** [CSS Modules / Tailwind CSS / SASS]
-- **Cliente HTTP:** [Axios / Fetch API]
-- **Gestión de Estado:** [Context API / Redux Toolkit / Zustand / Pinia]
-- **Calidad de Código:** ESLint, Prettier
+- **HTML5:** Marcado semántico para la estructuración accesible de las páginas y artículos.
+- **CSS3:** Estilos visuales modernos, diseño responsivo, transiciones y variables CSS.
+- **JavaScript (Vanilla / ES6+):** Programación del comportamiento dinámico del cliente, manipulación del DOM y gestión de eventos.
+- **Bootstrap 5.3:** Framework CSS elegido para el proyecto; aporta sistema de grillas, componentes listos (navbar, cards, forms, modales) y utilidades responsivas, incluyendo soporte nativo para modo oscuro/claro.
+- **Angular (Fase Posterior):** Uso de fundamentos básicos que incluyen arquitectura de componentes y data binding (enlace de datos unidireccional y bidireccional).
+- **localStorage / sessionStorage:** Mecanismos de almacenamiento web para la persistencia local de información del usuario (noticias favoritas, sesión y preferencias).
+- **JSON Local:** Archivos locales en formato JSON para el almacenamiento, estructuración y consumo simulado de datos de noticias y categorías.
+- **Herramientas de Diseño y Control de Versiones:**
+  - **[Pen (pen.dev)](https://www.pen.dev/):** Herramienta de diseño para la creación del prototipo y wireframes UI/UX (`.pen`).
+  - **Git & GitHub:** Control de versiones distribuido y flujo de trabajo en equipo.
 
 ---
 
 ## 📂 Estructura del Proyecto
 
 ```text
-frontend-grupo26-poli/
-├── public/                 # Archivos estáticos públicos (logos, favicon)
-├── src/
-│   ├── assets/             # Recursos locales (imágenes, iconos, tipografías)
-│   ├── components/         # Componentes reutilizables (Botones, Navbar, Cards)
-│   ├── context/ / hooks/   # Contextos globales y hooks personalizados
-│   ├── layouts/            # Diseños estructurales compartidos
-│   ├── pages/ / views/     # Páginas y vistas principales
-│   ├── services/           # Conexión con endpoints y servicios del Backend
-│   ├── routes/             # Enrutamiento de la aplicación
-│   ├── styles/             # Hojas de estilo y tokens de diseño
-│   ├── utils/              # Funciones auxiliares y constantes
-│   ├── App.jsx / App.vue   # Componente raíz
-│   └── main.jsx / index.js # Punto de entrada de la aplicación
-├── .env.example            # Plantilla de variables de entorno requeridas
-├── .gitignore              # Archivos ignorados por Git
-├── package.json            # Dependencias y scripts del proyecto
-└── README.md               # Documentación del proyecto
+FRONTEND-GRUPO26-POLI/
+├── PROTOTIPO/                      # Material de diseño UI/UX
+│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG
+│   │   ├── Contact.png
+│   │   ├── Favorites Page.png
+│   │   ├── Home.png
+│   │   ├── News Detail.png
+│   │   └── Profile.png
+│   └── Prototipo - SYNAPSE.TECH.pen # Archivo fuente editable en Pen (pen.dev)
+├── data/                           # Datos estáticos en JSON local
+│   └── news.json                   # Estructura de noticias y categorías
+├── src/                            # Código fuente del aplicativo web
+│   ├── assets/                     # Imágenes, iconos y recursos multimedia
+│   ├── css/ / styles/              # Hojas de estilo (CSS nativo + Bootstrap 5.3)
+│   ├── js/                         # Lógica en JavaScript (DOM, storage, render)
+│   └── pages/                      # Vistas principales (Home, Detalle, Favoritos, etc.)
+└── README.md                       # Documentación técnica del proyecto
 ```
 
 ---
 
-## ⚙️ Requisitos Previos
+## 🚀 Visualización y Puesta en Marcha
 
-Antes de comenzar, asegúrate de contar con:
-
-- **Node.js**: Versión `v18.x` o superior ([Descargar Node.js](https://nodejs.org/))
-- **npm** (o gestor preferido: `yarn`, `pnpm`)
-- **Git**: Sistema de control de versiones
-
----
-
-## 🚀 Instalación y Puesta en Marcha
+Para explorar el prototipo y ejecutar la aplicación localmente:
 
 1. **Clonar el repositorio:**
    ```bash
@@ -96,43 +147,20 @@ Antes de comenzar, asegúrate de contar con:
    cd FRONTEND-GRUPO26-POLI
    ```
 
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
+2. **Revisar los prototipos:**
+   - Puedes abrir directamente las imágenes en la carpeta [`PROTOTIPO/EXPORTADOS/`](./PROTOTIPO/EXPORTADOS/) para inspeccionar el diseño de cada pantalla.
+   - Para abrir o modificar el archivo fuente [`Prototipo - SYNAPSE.TECH.pen`](./PROTOTIPO/Prototipo%20-%20SYNAPSE.TECH.pen), puedes cargarlo en la aplicación web de **[Pen (pen.dev)](https://www.pen.dev/)**.
 
-3. **Configurar variables de entorno:**
-   ```bash
-   cp .env.example .env
-   ```
-   Ajusta las variables necesarias dentro de `.env`.
-
-4. **Iniciar el servidor de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-   La aplicación estará disponible en [http://localhost:5173](http://localhost:5173) (o el puerto configurado).
-
-5. **Generar compilación para producción:**
-   ```bash
-   npm run build
-   ```
-
----
-
-## 🔐 Variables de Entorno
-
-| Variable | Descripción | Valor por Defecto |
-| :--- | :--- | :--- |
-| `VITE_API_BASE_URL` | URL base para las peticiones a la API del Backend | `http://localhost:8000/api` |
-| `VITE_APP_ENV` | Entorno de despliegue (`development`, `production`) | `development` |
+3. **Ejecutar el aplicativo web:**
+   - Abre el archivo principal `index.html` (o las vistas dentro del proyecto) directamente en cualquier navegador moderno (Chrome, Edge, Firefox).
+   - Opcionalmente, puedes utilizar la extensión **Live Server** de VS Code para recarga en caliente automática.
 
 ---
 
 ## 🔄 Integración con Backend
 
-- **Repositorio Backend:** `[Enlace al repositorio del backend]`
-- **Documentación API:** `[Enlace a Swagger / Postman]`
+- **Repositorio Backend:** `[Pendiente de integración]`
+- **Documentación API:** `[Enlace a Swagger / Postman / Endpoints futuros]`
 
 ---
 
@@ -159,8 +187,8 @@ Para mantener una integración fluida y ordenada:
 | Nombre Completo | Rol / Responsabilidad | Perfil / Contacto |
 | :--- | :--- | :--- |
 | **Cristian Ricardo** | *Líder de Proyecto / Frontend* | [@cr1c4rd0](https://github.com/cr1c4rd0) |
-| **Juan Esteban Serna** | *Frontend Developer* | [@usuario](https://github.com) |
-| **Juan Manuel Saldarriaga** | *Frontend Developer / UI-UX* | [@usuario](https://github.com) |
+| **Juan Esteban Serna** | *Frontend Developer* | [@Xt-ban](https://github.com/Xt-ban) |
+| **Juan Manuel Saldarriaga** | *Frontend Developer* | [@juansaldarriagaa](https://github.com/juansaldarriagaa) |
 
 ---
 
