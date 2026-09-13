@@ -3396,109 +3396,11 @@
         },
         {
           "type": "frame",
-          "id": "jjuPz",
-          "name": "Profile Tabs",
-          "width": "fill_container",
-          "stroke": "$border-subtle",
-          "strokeWidth": {
-            "bottom": 1
-          },
-          "gap": 8,
-          "padding": [
-            0,
-            "$space-page-x"
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "Axn4b",
-              "name": "Tab Favoritos",
-              "stroke": "$accent-primary",
-              "strokeWidth": {
-                "bottom": 2
-              },
-              "layout": "vertical",
-              "gap": 10,
-              "padding": [
-                14,
-                4
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "q7f48k",
-                  "name": "Tab Label",
-                  "fill": "$text-primary",
-                  "content": "Favoritos",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "e2EWa",
-              "name": "Tab Historial de lectura",
-              "stroke": "#00000000",
-              "strokeWidth": {
-                "bottom": 2
-              },
-              "layout": "vertical",
-              "gap": 10,
-              "padding": [
-                14,
-                4
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "yW2uS",
-                  "name": "Tab Label",
-                  "fill": "$text-tertiary",
-                  "content": "Historial de lectura",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "ZPBqq",
-              "name": "Tab Configuración",
-              "stroke": "#00000000",
-              "strokeWidth": {
-                "bottom": 2
-              },
-              "layout": "vertical",
-              "gap": 10,
-              "padding": [
-                14,
-                4
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "uGg85",
-                  "name": "Tab Label",
-                  "fill": "$text-tertiary",
-                  "content": "Configuración",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "L32sW",
-          "name": "Favorites Section",
+          "id": "s0We6",
+          "name": "Settings Section",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": 24,
+          "gap": 20,
           "padding": [
             32,
             "$space-page-x",
@@ -3508,23 +3410,511 @@
           "children": [
             {
               "type": "text",
-              "id": "d4KjG",
-              "name": "Fav Section Title",
+              "id": "Y9EEBo",
+              "name": "Settings Title",
               "fill": "$text-primary",
-              "content": "Mis noticias favoritas",
+              "content": "Configuración de la cuenta",
               "fontFamily": "$font-heading",
               "fontSize": 22,
               "fontWeight": "700"
             },
             {
               "type": "frame",
-              "id": "GKTJB",
+              "id": "wxvZ0",
+              "name": "Settings Form Card",
+              "width": "fill_container",
+              "fill": "$bg-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border-subtle",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y3qhYn",
+                  "name": "Photo Row",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SKNXc",
+                      "name": "Settings Avatar",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "chema_photo",
+                        "link": "https://unsplash.com/@chema_photo",
+                        "author": "Chema Photo"
+                      },
+                      "width": 64,
+                      "height": 64,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1585402627084-e80d83061b76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzMjMwMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sV7Zn",
+                      "name": "Photo Btn Col",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x3Gca",
+                          "name": "Photo Label",
+                          "fill": "$text-primary",
+                          "content": "Foto de perfil",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "c9Rwl",
+                          "name": "Change Photo Button",
+                          "fill": "$bg-page",
+                          "cornerRadius": 8,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "O23Vam",
+                              "name": "Upload Icon",
+                              "width": 13,
+                              "height": 13,
+                              "icon": "upload",
+                              "library": "lucide",
+                              "fill": "$text-secondary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "oaVZb",
+                              "name": "Change Photo Label",
+                              "fill": "$text-secondary",
+                              "content": "Cambiar foto",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ba9YF",
+                  "name": "Settings Row Name Email",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VBa3w",
+                      "name": "Field Nombre completo",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QQjK6",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Nombre completo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "euRqI",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zvkbz",
+                              "name": "Field Value",
+                              "fill": "$text-primary",
+                              "content": "Cristian Ricardo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F2zCu",
+                      "name": "Field Correo electrónico",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IB8vt",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Correo electrónico",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bcCsF",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AAQrU",
+                              "name": "Field Value",
+                              "fill": "$text-primary",
+                              "content": "cristianricardo87@gmail.com",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lr6fo",
+                  "name": "Field Biografía",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k8dUQo",
+                      "name": "Field Label",
+                      "fill": "$text-secondary",
+                      "content": "Biografía",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h61QH8",
+                      "name": "Field Input",
+                      "width": "fill_container",
+                      "height": 90,
+                      "fill": "$bg-page",
+                      "cornerRadius": 10,
+                      "stroke": "$border-subtle",
+                      "strokeWidth": 1,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hfCdd",
+                          "name": "Field Value",
+                          "fill": "$text-primary",
+                          "content": "Líder de proyecto / Frontend en SYNAPSE.TECH",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "B0svcL",
+                  "name": "Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "$border-subtle"
+                },
+                {
+                  "type": "text",
+                  "id": "RzWiT",
+                  "name": "Password Subtitle",
+                  "fill": "$text-primary",
+                  "content": "Cambiar contraseña",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "zjGXj",
+                  "name": "Password Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MTiEZ",
+                      "name": "Field Contraseña actual",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oGXOi",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Contraseña actual",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QePJV",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SctaT",
+                              "name": "Field Value",
+                              "fill": "$text-primary",
+                              "content": "••••••••",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RXMJX",
+                      "name": "Field Nueva contraseña",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sh46k",
+                          "name": "Field Label",
+                          "fill": "$text-secondary",
+                          "content": "Nueva contraseña",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qDR0x",
+                          "name": "Field Input",
+                          "width": "fill_container",
+                          "height": 46,
+                          "fill": "$bg-page",
+                          "cornerRadius": 10,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1,
+                          "padding": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "W1wUW",
+                              "name": "Field Value",
+                              "fill": "$text-primary",
+                              "content": "••••••••",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uHm1W",
+                  "name": "Save Settings Button",
+                  "width": "fill_container",
+                  "fill": "$accent-primary",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "P2xpKS",
+                      "name": "Save Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "#0A0D14"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m6hKY",
+                      "name": "Save Label",
+                      "fill": "#0A0D14",
+                      "content": "Guardar cambios",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kn4s1",
+          "type": "ref",
+          "ref": "KAG3B",
+          "name": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gdsTy",
+      "x": 6240,
+      "y": 1206,
+      "name": "Favorites Page",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "t3RMp",
+          "type": "ref",
+          "ref": "NE0oM",
+          "name": "Header"
+        },
+        {
+          "type": "frame",
+          "id": "Csc3G",
+          "name": "Favorites Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            48,
+            "$space-page-x",
+            8,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ZFyZr",
+              "name": "Fav Head Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "TU BIBLIOTECA",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "K5WRk",
+              "name": "Fav Head Title",
+              "fill": "$text-primary",
+              "content": "Noticias favoritas",
+              "fontFamily": "$font-heading",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "xXSqh",
+              "name": "Fav Head Sub",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "Aquí encuentras todas las noticias que has guardado para leer más tarde.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iQF1J",
+          "name": "Favorites Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            24,
+            "$space-page-x",
+            48,
+            "$space-page-x"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nsAgZ",
               "name": "Fav Row",
               "width": "fill_container",
               "gap": 24,
               "children": [
                 {
-                  "id": "txuzu",
+                  "id": "vGRO6",
                   "type": "ref",
                   "ref": "dyJCE",
                   "name": "Detectan vulnerabilidad crítica en routers domésticos",
@@ -3563,7 +3953,7 @@
                   }
                 },
                 {
-                  "id": "x9bUgA",
+                  "id": "N0bmT",
                   "type": "ref",
                   "ref": "dyJCE",
                   "name": "Un nuevo modelo de IA reduce en 40% el consumo energético de los centros de datos",
@@ -3605,13 +3995,13 @@
             },
             {
               "type": "frame",
-              "id": "o0zkGQ",
+              "id": "EQdXf",
               "name": "Fav Row",
               "width": "fill_container",
               "gap": 24,
               "children": [
                 {
-                  "id": "ApUzK",
+                  "id": "g7cJd",
                   "type": "ref",
                   "ref": "dyJCE",
                   "name": "Nuevo chip promete duplicar la autonomía de laptops",
@@ -3650,7 +4040,7 @@
                   }
                 },
                 {
-                  "id": "q3wSld",
+                  "id": "yA75R",
                   "type": "ref",
                   "ref": "dyJCE",
                   "name": "Startup colombiana de robótica cierra ronda de $8M",
@@ -3693,7 +4083,7 @@
           ]
         },
         {
-          "id": "y2HXC",
+          "id": "r2DU67",
           "type": "ref",
           "ref": "KAG3B",
           "name": "Footer"
