@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | SYNAPSE.TECH</title>
+  <meta name="description" content="Ponte en contacto con el equipo editorial de SYNAPSE.TECH. Formulario con validación en tiempo real y soporte directo.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2322D3EE'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header class="site-header" id="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo" id="brand-logo">
+        <div class="brand-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <span class="brand-text">SYNAPSE.TECH</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav">
+          <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
+          <li><a href="index.html#categorias" class="nav-link-custom">Categorías</a></li>
+          <li>
+            <a href="favoritos.html" class="nav-link-custom">
+              Favoritos <span class="nav-fav-badge">0</span>
+            </a>
+          </li>
+          <li><a href="contacto.html" class="nav-link-custom active">Contacto</a></li>
+          <li><a href="admin.html" class="nav-link-custom">Admin</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="btn-open-search" aria-label="Buscar noticias">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="perfil.html" class="user-profile-btn">
+          <div class="user-avatar-mini">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&w=200" alt="Avatar">
+          </div>
+          <span>Cristian Ricardo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido de Contacto -->
+  <main class="contact-view-wrap">
+    <div class="container" style="max-width: 1320px;">
+      
+      <!-- Encabezado de la página -->
+      <div class="mb-5">
+        <div class="eyebrow-tag">
+          <span>CONTÁCTANOS</span>
+        </div>
+        <h1 class="hero-title mb-2">Hablemos de tecnología</h1>
+        <p class="hero-excerpt mb-0" style="max-width: 650px;">
+          ¿Tienes una noticia, sugerencia o quieres colaborar con SYNAPSE.TECH? Completa el formulario y te responderemos lo antes posible.
+        </p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Columna Izquierda: Formulario con validaciones en JavaScript -->
+        <div class="col-lg-7">
+          <div class="contact-card-form" id="contact-form-container">
+            <form id="contactForm" novalidate>
+              
+              <!-- Fila: Nombre y Correo -->
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <label for="contact-nombre" class="form-label-custom">Nombre completo</label>
+                  <input type="text" class="form-control-dark" id="contact-nombre" name="nombre" placeholder="Ej. Juan Pérez" autocomplete="name">
+                  <div class="invalid-feedback-custom d-none" id="error-nombre">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span>Este campo es obligatorio.</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="contact-email" class="form-label-custom">Correo electrónico</label>
+                  <input type="email" class="form-control-dark" id="contact-email" name="email" placeholder="tu@correo.com" autocomplete="email">
+                  <div class="invalid-feedback-custom d-none" id="error-email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span id="error-email-text">Este campo es obligatorio.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Asunto -->
+              <div class="mb-4">
+                <label for="contact-asunto" class="form-label-custom">Asunto</label>
+                <input type="text" class="form-control-dark" id="contact-asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mb-4">
+                <label for="contact-mensaje" class="form-label-custom">Mensaje</label>
+                <textarea class="form-control-dark" id="contact-mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div class="invalid-feedback-custom d-none" id="error-mensaje">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Este campo es obligatorio.</span>
+                </div>
+              </div>
+
+              <!-- Botón de Envío -->
+              <button type="submit" class="btn-primary-purple w-100 justify-content-center py-3" id="btn-submit-contact">
+                <span>Enviar mensaje</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Información de Contacto y Redes -->
+        <div class="col-lg-5">
+          <!-- Card de Info -->
+          <div class="contact-info-card">
+            <h3 class="font-heading fs-5 fw-bold mb-4">Información de contacto</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-sub">Correo</div>
+                <div class="contact-info-val">redaccion@synapse.tech</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-sub">Teléfono</div>
+                <div class="contact-info-val">+57 300 123 4567</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-sub">Ubicación</div>
+                <div class="contact-info-val">Bogotá, Colombia</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-sub">Horario</div>
+                <div class="contact-info-val">Lun - Vie · 8:00 - 18:00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Síguenos -->
+          <div class="banner-social-follow">
+            <h4>Síguenos</h4>
+            <p>Entérate primero de las últimas noticias tech.</p>
+            <div class="social-pills-row">
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-pill-btn" aria-label="Twitter">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-pill-btn" aria-label="LinkedIn">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://github.com/cr1c4rd0/FRONTEND-GRUPO26-POLI" target="_blank" rel="noopener" class="social-pill-btn" aria-label="GitHub">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill-btn" aria-label="YouTube">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Pie de Página Institucional -->
+  <footer class="site-footer">
+    <div class="container" style="max-width: 1320px;">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="brand-logo mb-3 d-inline-flex">
+            <div class="brand-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <span class="brand-text">SYNAPSE.TECH</span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; max-width: 320px;">
+            Periodismo tecnológico con enfoque en IA, hardware, software y ciberseguridad. Noticias verificadas, análisis claros.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Secciones</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#categorias">Inteligencia Artificial</a></li>
+            <li><a href="index.html#categorias">Hardware</a></li>
+            <li><a href="index.html#categorias">Software</a></li>
+            <li><a href="index.html#categorias">Ciberseguridad</a></li>
+            <li><a href="index.html#categorias">Startups</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Compañía</h3>
+          <ul class="footer-nav-list">
+            <li><a href="perfil.html">Sobre nosotros</a></li>
+            <li><a href="admin.html">Equipo editorial</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#!">Términos de uso</a></li>
+            <li><a href="#!">Privacidad</a></li>
+            <li><a href="#!">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-sub-bar">
+        <span>© 2026 SYNAPSE.TECH — Proyecto académico Politécnico Grancolombiano</span>
+        <span>Hecho con Bootstrap · Grupo 26</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Búsqueda Global -->
+  <div class="modal fade modal-custom-backdrop" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-dark">
+        <div class="modal-header modal-header-dark">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="form-control-dark border-0 bg-transparent text-white" id="global-search-input" placeholder="Buscar...">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4" id="global-search-results">
+          <p class="text-center text-muted py-4 mb-0">Escribe para buscar...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Lógica de Validación y Envío de Formulario en JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      const nombreInput = document.getElementById('contact-nombre');
+      const emailInput = document.getElementById('contact-email');
+      const mensajeInput = document.getElementById('contact-mensaje');
+      
+      const errorNombre = document.getElementById('error-nombre');
+      const errorEmail = document.getElementById('error-email');
+      const errorEmailText = document.getElementById('error-email-text');
+      const errorMensaje = document.getElementById('error-mensaje');
+      const formContainer = document.getElementById('contact-form-container');
+
+      // Expresión regular estándar para validación de formato de email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Limpieza de estados de error al escribir (feedback en tiempo real)
+      nombreInput.addEventListener('input', () => {
+        if (nombreInput.value.trim()) {
+          nombreInput.classList.remove('is-invalid');
+          errorNombre.classList.add('d-none');
+        }
+      });
+
+      emailInput.addEventListener('input', () => {
+        if (emailInput.value.trim() && emailRegex.test(emailInput.value.trim())) {
+          emailInput.classList.remove('is-invalid');
+          errorEmail.classList.add('d-none');
+        }
+      });
+
+      mensajeInput.addEventListener('input', () => {
+        if (mensajeInput.value.trim()) {
+          mensajeInput.classList.remove('is-invalid');
+          errorMensaje.classList.add('d-none');
+        }
+      });
+
+      // Manejo del evento Submit del formulario
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        let isValid = true;
+        const nombreVal = nombreInput.value.trim();
+        const emailVal = emailInput.value.trim();
+        const mensajeVal = mensajeInput.value.trim();
+
+        // Validación de Nombre
+        if (!nombreVal) {
+          nombreInput.classList.add('is-invalid');
+          errorNombre.classList.remove('d-none');
+          isValid = false;
+        } else {
+          nombreInput.classList.remove('is-invalid');
+          errorNombre.classList.add('d-none');
+        }
+
+        // Validación de Correo Electrónico (campo obligatorio y formato válido)
+        if (!emailVal) {
+          emailInput.classList.add('is-invalid');
+          errorEmailText.textContent = 'Este campo es obligatorio.';
+          errorEmail.classList.remove('d-none');
+          isValid = false;
+        } else if (!emailRegex.test(emailVal)) {
+          emailInput.classList.add('is-invalid');
+          errorEmailText.textContent = 'Ingresa un correo electrónico válido.';
+          errorEmail.classList.remove('d-none');
+          isValid = false;
+        } else {
+          emailInput.classList.remove('is-invalid');
+          errorEmail.classList.add('d-none');
+        }
+
+        // Validación de Mensaje
+        if (!mensajeVal) {
+          mensajeInput.classList.add('is-invalid');
+          errorMensaje.classList.remove('d-none');
+          isValid = false;
+        } else {
+          mensajeInput.classList.remove('is-invalid');
+          errorMensaje.classList.add('d-none');
+        }
+
+        // Si la validación falla, detener ejecución
+        if (!isValid) {
+          showToast('Por favor completa los campos requeridos correctamente', 'error');
+          return;
+        }
+
+        // Validación exitosa: renderizar estado de confirmación visual idéntico al mockup Contacto - Enviado.png
+        renderSuccessState(formContainer);
+        showToast('¡Tu mensaje ha sido enviado con éxito!', 'success');
+      });
+
+      // Soporte para visualización directa de estados (Mockups Entrega 1)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('demo') === 'validacion') {
+        nombreInput.classList.add('is-invalid');
+        errorNombre.classList.remove('d-none');
+        emailInput.classList.add('is-invalid');
+        errorEmailText.textContent = 'Este campo es obligatorio.';
+        errorEmail.classList.remove('d-none');
+        mensajeInput.classList.add('is-invalid');
+        errorMensaje.classList.remove('d-none');
+      } else if (urlParams.get('demo') === 'enviado') {
+        renderSuccessState(formContainer);
+      }
+    });
+
+    /**
+     * Renderiza el estado de éxito visual acorde a Contacto - Enviado.png
+     */
+    function renderSuccessState(container) {
+      container.innerHTML = `
+        <div class="contact-success-state">
+          <div class="success-check-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h2 class="font-heading fs-2 fw-bold text-white mb-3">¡Mensaje enviado!</h2>
+          <p class="text-secondary fs-6 mb-4" style="max-width: 440px; margin: 0 auto; line-height: 1.6;">
+            Gracias por escribirnos. Nuestro equipo editorial revisará tu mensaje y te responderá al correo indicado en menos de 24 horas.
+          </p>
+          <button type="button" class="btn-primary-purple" onclick="window.location.reload()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+            <span>Enviar otro mensaje</span>
+          </button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

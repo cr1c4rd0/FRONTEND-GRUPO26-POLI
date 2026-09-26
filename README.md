@@ -2,7 +2,7 @@
 
 > Aplicación web tipo periódico interactivo desarrollada por el **Grupo 26** para el proyecto académico de la asignatura **FRONTEND** en el **Politécnico Grancolombiano**.
 
-[![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)](#)
+[![Estado del Proyecto](https://img.shields.io/badge/Entrega%202-Completada-brightgreen?style=for-the-badge)](#)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
@@ -128,36 +128,34 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 
 ```text
 FRONTEND-GRUPO26-POLI/
-├── PROTOTIPO/                      # Material de diseño UI/UX
-│   ├── EXPORTADOS/                 # Vistas exportadas en formato PNG (12 pantallas)
-│   │   ├── Admin Noticias - Editar (Guardada).png
-│   │   ├── Admin Noticias - Eliminar.png
-│   │   ├── Admin Noticias - Nueva (Publicada).png
-│   │   ├── Admin Noticias - Nueva.png
-│   │   ├── Admin Noticias.png
-│   │   ├── Contact.png
-│   │   ├── Contacto - Enviado.png
-│   │   ├── Contacto - Validacion.png
-│   │   ├── Favorites Page.png
-│   │   ├── Home.png
-│   │   ├── News Detail.png
-│   │   └── Profile.png
-│   └── Prototipo - SYNAPSE.TECH.pen # Archivo fuente editable en Pen (pen.dev)
-├── data/                           # Datos estáticos en JSON local
-│   └── news.json                   # Estructura de noticias y categorías
-├── src/                            # Código fuente del aplicativo web
-│   ├── assets/                     # Imágenes, iconos y recursos multimedia
-│   ├── css/ / styles/              # Hojas de estilo (CSS nativo + Bootstrap 5.3)
-│   ├── js/                         # Lógica en JavaScript (DOM, storage, render)
-│   └── pages/                      # Vistas principales (Home, Detalle, Favoritos, etc.)
-└── README.md                       # Documentación técnica del proyecto
+├── index.html                      # Vista principal / Home con catálogo dinámico
+├── detalle.html                    # Vista de detalle de noticia (?id=NEWS-XX)
+├── favoritos.html                  # Biblioteca personalizada de noticias guardadas
+├── contacto.html                   # Formulario con validación JS y confirmación
+├── admin.html                      # Mini CRUD (crear, editar, eliminar, previsualizar)
+├── perfil.html                     # Perfil de usuario y preferencias de lectura
+├── css/
+│   └── styles.css                  # Sistema de diseño, tokens, dark theme y animaciones
+├── js/
+│   ├── storage.js                  # Persistencia localStorage y semilla/fallback
+│   └── app.js                      # Lógica global, tarjetas dinámicas, toast y búsqueda
+├── data/
+│   └── news.json                   # Catálogo de noticias para consumo dinámico
+├── docs/
+│   ├── INFORME_ENTREGA_2_GRUPO26.pdf # Informe académico en formato APA 7ma edición
+│   ├── informe_entrega_2.html      # Fuente HTML maquetada del informe
+│   └── capturas/                   # Capturas de alta resolución de las vistas
+├── PROTOTIPO/                      # Material de diseño de la Entrega 1
+│   ├── EXPORTADOS/                 # Mockups de referencia en PNG (12 pantallas)
+│   └── Prototipo - SYNAPSE.TECH.pen # Archivo fuente editable en Penpot/Pen
+└── README.md                       # Documentación técnica general
 ```
 
 ---
 
-## 🚀 Visualización y Puesta en Marcha
+## 🚀 Visualización y Puesta en Marcha (Autonomía Local)
 
-Para explorar el prototipo y ejecutar la aplicación localmente:
+La aplicación ha sido desarrollada para operar de forma 100% autónoma en cualquier navegador sin necesidad de servidores backend, NodeJS ni bases de datos:
 
 1. **Clonar el repositorio:**
    ```bash
@@ -165,13 +163,16 @@ Para explorar el prototipo y ejecutar la aplicación localmente:
    cd FRONTEND-GRUPO26-POLI
    ```
 
-2. **Revisar los prototipos:**
-   - Puedes abrir directamente las imágenes en la carpeta [`PROTOTIPO/EXPORTADOS/`](./PROTOTIPO/EXPORTADOS/) para inspeccionar el diseño de cada pantalla.
-   - Para abrir o modificar el archivo fuente [`Prototipo - SYNAPSE.TECH.pen`](./PROTOTIPO/Prototipo%20-%20SYNAPSE.TECH.pen), puedes cargarlo en la aplicación web de **[Pen (pen.dev)](https://www.pen.dev/)**.
+2. **Ejecución directa en el navegador:**
+   - Haz doble clic sobre `index.html` o ábrelo directamente en tu navegador preferido (Google Chrome, Microsoft Edge, Mozilla Firefox o Safari).
+   - Puedes interactuar con el catálogo, filtrar por temas, guardar favoritos, enviar el formulario de contacto y crear/editar/eliminar noticias desde el módulo de administración (`admin.html`).
 
-3. **Ejecutar el aplicativo web:**
-   - Abre el archivo principal `index.html` (o las vistas dentro del proyecto) directamente en cualquier navegador moderno (Chrome, Edge, Firefox).
-   - Opcionalmente, puedes utilizar la extensión **Live Server** de VS Code para recarga en caliente automática.
+3. **Ejecución con servidor estático local (opcional):**
+   - Con **Live Server** de VS Code: Clic derecho en `index.html` -> *Open with Live Server*.
+   - Con Python: `python -m http.server 8080` y abrir `http://localhost:8080`.
+
+4. **Documento de Entrega (Normas APA 7ma Edición):**
+   - El informe académico completo se encuentra disponible en formato PDF en [`docs/INFORME_ENTREGA_2_GRUPO26.pdf`](./docs/INFORME_ENTREGA_2_GRUPO26.pdf).
 
 ---
 

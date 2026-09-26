@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario — SYNAPSE.TECH | Periodismo Tecnológico</title>
+  <meta name="description" content="Gestiona tu cuenta, tus preferencias de lectura y tus noticias guardadas en SYNAPSE.TECH.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237C5CFF'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+  
+  <!-- Fuentes Google: Space Grotesk e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Estilos Personalizados SYNAPSE.TECH -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header / Barra de Navegación Principal
+       ======================================================================== -->
+  <header class="site-header sticky-top" id="main-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Ir a inicio de SYNAPSE.TECH">
+        <div class="brand-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <span class="brand-text">SYNAPSE.TECH</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav">
+          <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
+          <li><a href="index.html#categorias" class="nav-link-custom">Categorías</a></li>
+          <li>
+            <a href="favoritos.html" class="nav-link-custom">
+              Favoritos <span class="nav-fav-badge" id="nav-fav-counter">0</span>
+            </a>
+          </li>
+          <li><a href="contacto.html" class="nav-link-custom">Contacto</a></li>
+          <li><a href="admin.html" class="nav-link-custom">Admin</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="btn-open-search" aria-label="Buscar noticias">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="perfil.html" class="user-profile-btn active" title="Mi perfil de usuario">
+          <div class="user-avatar-mini">
+            <img id="nav-user-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&w=200" alt="Avatar">
+          </div>
+          <span id="nav-user-name">Cristian Ricardo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Contenido Principal: Perfil de Usuario
+       ======================================================================== -->
+  <main class="profile-view-wrap">
+    <div class="container" style="max-width: 960px;">
+      
+      <!-- Tarjeta Superior de Resumen de Perfil (Fiel a Profile.png) -->
+      <section class="profile-header-card" aria-label="Información de perfil">
+        <div class="profile-user-main">
+          <div class="profile-avatar-large">
+            <img id="profile-main-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&w=200" alt="Cristian Ricardo">
+          </div>
+          <div class="profile-header-info">
+            <h1 id="profile-display-name">Cristian Ricardo</h1>
+            <p class="profile-email-lead" id="profile-display-email">cristianricardo87@gmail.com</p>
+            <div class="profile-header-meta">
+              <span class="profile-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" class="text-danger">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+                <span class="profile-fav-count">4</span> favoritos
+              </span>
+              <span class="profile-meta-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Miembro desde <span id="profile-display-since">ago 2026</span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" class="profile-btn-edit" id="btn-focus-edit">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+            </svg>
+            <span>Editar perfil</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sección Configuración de la Cuenta -->
+      <section aria-labelledby="heading-account-settings">
+        <h2 id="heading-account-settings" class="mb-4" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 700;">
+          Configuración de la cuenta
+        </h2>
+
+        <div class="profile-config-card">
+          <form id="form-user-profile" novalidate>
+            
+            <!-- Fila de Avatar -->
+            <div class="profile-avatar-row">
+              <img id="profile-thumb-preview" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&w=200" alt="Miniatura de perfil" class="profile-thumb-img">
+              <div>
+                <label class="form-label-custom mb-1 d-block">Foto de perfil</label>
+                <button type="button" class="btn-change-avatar" id="btn-change-photo-dialog">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <span>Cambiar foto</span>
+                </button>
+                <input type="file" id="avatar-file-input" accept="image/*" style="display: none;">
+              </div>
+            </div>
+
+            <!-- Fila de Nombre y Correo -->
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <label for="input-profile-name" class="form-label-custom">Nombre completo</label>
+                <input type="text" class="form-control-dark" id="input-profile-name" required value="Cristian Ricardo">
+              </div>
+              <div class="col-md-6">
+                <label for="input-profile-email" class="form-label-custom">Correo electrónico</label>
+                <input type="email" class="form-control-dark" id="input-profile-email" required value="cristianricardo87@gmail.com">
+              </div>
+            </div>
+
+            <!-- Biografía -->
+            <div class="mb-4">
+              <label for="input-profile-bio" class="form-label-custom">Biografía</label>
+              <textarea class="form-control-dark" id="input-profile-bio" rows="3" style="resize: vertical;">Líder de proyecto / Frontend en SYNAPSE.TECH</textarea>
+            </div>
+
+            <!-- Línea divisoria -->
+            <div class="profile-section-divider"></div>
+
+            <!-- Subsección Contraseña -->
+            <h3 class="profile-section-subhead">Cambiar contraseña</h3>
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <label for="input-profile-curr-pass" class="form-label-custom">Contraseña actual</label>
+                <input type="password" class="form-control-dark" id="input-profile-curr-pass" placeholder="••••••••">
+              </div>
+              <div class="col-md-6">
+                <label for="input-profile-new-pass" class="form-label-custom">Nueva contraseña</label>
+                <input type="password" class="form-control-dark" id="input-profile-new-pass" placeholder="••••••••">
+              </div>
+            </div>
+
+            <!-- Botón de Guardar Cambios -->
+            <button type="submit" class="btn-save-profile" id="btn-save-profile-action">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Guardar cambios</span>
+            </button>
+
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer Institucional
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container" style="max-width: 1320px;">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="brand-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <span class="brand-text">SYNAPSE.TECH</span>
+          </div>
+          <p class="footer-desc">
+            Periodismo tecnológico con enfoque en IA, hardware, software y ciberseguridad. Noticias verificadas, análisis claros.
+          </p>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/cr1c4rd0/FRONTEND-GRUPO26-POLI" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-col-title">Secciones</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html?cat=IA">Inteligencia Artificial</a></li>
+            <li><a href="index.html?cat=Hardware">Hardware</a></li>
+            <li><a href="index.html?cat=Software">Software</a></li>
+            <li><a href="index.html?cat=Ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="index.html?cat=Startups">Startups</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-col-title">Compañía</h4>
+          <ul class="footer-nav-list">
+            <li><a href="perfil.html">Sobre nosotros</a></li>
+            <li><a href="perfil.html">Equipo editorial</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 SYNAPSE.TECH — Proyecto académico Politécnico Grancolombiano</p>
+        <div class="footer-credits">Hecho con Bootstrap · Grupo 26</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Búsqueda Global -->
+  <div class="modal fade modal-custom-dark" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Buscar en SYNAPSE.TECH</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="search-input-wrap mb-4">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="global-search-input" class="form-input-custom" placeholder="Buscar por tema, tecnología, autor...">
+          </div>
+          <div id="search-results-box" class="search-results-list">
+            <p class="text-secondary text-center py-4">Escribe una palabra clave para buscar noticias...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await initStorage();
+      updateGlobalFavCount();
+
+      // Cargar información del perfil de usuario desde localStorage
+      const profile = getUserProfile();
+      
+      const displayName = document.getElementById('profile-display-name');
+      const displayEmail = document.getElementById('profile-display-email');
+      const displaySince = document.getElementById('profile-display-since');
+      const mainAvatar = document.getElementById('profile-main-avatar');
+      const thumbPreview = document.getElementById('profile-thumb-preview');
+      const navAvatar = document.getElementById('nav-user-avatar');
+      const navName = document.getElementById('nav-user-name');
+
+      const inputName = document.getElementById('input-profile-name');
+      const inputEmail = document.getElementById('input-profile-email');
+      const inputBio = document.getElementById('input-profile-bio');
+
+      if (profile) {
+        if (displayName) displayName.textContent = profile.name || 'Cristian Ricardo';
+        if (displayEmail) displayEmail.textContent = profile.email || 'cristianricardo87@gmail.com';
+        if (displaySince) displaySince.textContent = profile.memberSince || 'ago 2026';
+        if (inputName) inputName.value = profile.name || 'Cristian Ricardo';
+        if (inputEmail) inputEmail.value = profile.email || 'cristianricardo87@gmail.com';
+        if (inputBio) inputBio.value = profile.bio || 'Líder de proyecto / Frontend en SYNAPSE.TECH';
+        if (navName) navName.textContent = profile.name || 'Cristian Ricardo';
+
+        if (profile.avatarUrl) {
+          if (mainAvatar) mainAvatar.src = profile.avatarUrl;
+          if (thumbPreview) thumbPreview.src = profile.avatarUrl;
+          if (navAvatar) navAvatar.src = profile.avatarUrl;
+        }
+      }
+
+      // Sincronizar contador de favoritos en el header y en el perfil
+      const favs = getFavorites();
+      document.querySelectorAll('.profile-fav-count').forEach(el => {
+        el.textContent = favs.length;
+      });
+
+      // Botón "Editar perfil" para enfocar el formulario
+      const btnFocusEdit = document.getElementById('btn-focus-edit');
+      if (btnFocusEdit) {
+        btnFocusEdit.addEventListener('click', () => {
+          inputName.focus();
+          inputName.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      }
+
+      // Botón para cambiar foto (simulado con file reader local)
+      const btnChangePhoto = document.getElementById('btn-change-photo-dialog');
+      const fileInput = document.getElementById('avatar-file-input');
+      if (btnChangePhoto && fileInput) {
+        btnChangePhoto.addEventListener('click', () => {
+          fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (e) => {
+          const file = e.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+              const newUrl = event.target.result;
+              if (mainAvatar) mainAvatar.src = newUrl;
+              if (thumbPreview) thumbPreview.src = newUrl;
+              if (navAvatar) navAvatar.src = newUrl;
+              saveUserProfile({ avatarUrl: newUrl });
+              showToast('Foto de perfil actualizada con éxito', 'success');
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      }
+
+      // Guardar formulario de perfil
+      const form = document.getElementById('form-user-profile');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const updatedName = inputName.value.trim();
+          const updatedEmail = inputEmail.value.trim();
+          const updatedBio = inputBio.value.trim();
+
+          if (!updatedName || !updatedEmail) {
+            showToast('Por favor completa el nombre y el correo', 'warning');
+            return;
+          }
+
+          saveUserProfile({
+            name: updatedName,
+            email: updatedEmail,
+            bio: updatedBio
+          });
+
+          if (displayName) displayName.textContent = updatedName;
+          if (displayEmail) displayEmail.textContent = updatedEmail;
+          if (navName) navName.textContent = updatedName;
+
+          showToast('Cambios del perfil guardados correctamente', 'success');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
