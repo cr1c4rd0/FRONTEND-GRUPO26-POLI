@@ -1,0 +1,29 @@
+# Directorio solicitado
+docs/
+
+# Dependencias y construcción
+node_modules/
+dist/
+build/
+
+# Archivos de entorno y configuración sensible
+.env
+.env.local
+.env.*.local
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
