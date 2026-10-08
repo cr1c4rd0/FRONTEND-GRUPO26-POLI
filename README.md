@@ -17,7 +17,7 @@
 - [Arquitectura en Angular](#-arquitectura-en-angular)
 - [Características Principales](#-características-principales)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Puesta en Marcha y Ejecución](#-puesta-en-marcha-y-ejecución)
+- [Guía de Ejecución y Requisitos del Sistema](#-guía-de-ejecución-y-requisitos-del-sistema)
 - [Diseño y Prototipado (UI/UX)](#-diseño-y-prototipado-uiux)
 - [Historial y Respaldo Entrega 2](#-historial-y-respaldo-entrega-2)
 - [Integrantes del Grupo 26](#-integrantes-del-grupo-26)
@@ -112,40 +112,136 @@ FRONTEND-GRUPO26-POLI/
 
 ---
 
-## 🚀 Puesta en Marcha y Ejecución
+## 🚀 Guía de Ejecución y Requisitos del Sistema
 
-### Prerrequisitos
-- **Node.js**: v18 o superior (recomendado v20+ o v24 LTS).
-- **npm**: v9 o superior.
+Esta sección detalla los prerrequisitos técnicos necesarios y el paso a paso exacto para descargar, instalar y poner en marcha el proyecto desarrollado en **Angular**.
 
-### 1. Clonar el Repositorio
+---
+
+### 💻 Requisitos del Sistema (Prerrequisitos)
+
+Antes de ejecutar el proyecto, asegúrate de tener instaladas las siguientes herramientas en tu sistema operativo (Windows, macOS o Linux):
+
+| Requisito | Versión Requerida | ¿Para qué se necesita? | ¿Cómo verificar si está instalado? |
+| :--- | :--- | :--- | :--- |
+| **Node.js** | **v18.x**, **v20.x** o **v24.x LTS** *(Recomendado v20+)* | Entorno de ejecución para compilar el proyecto y ejecutar las herramientas de Angular. | `node -v` |
+| **npm** | **v9.x** o superior *(Viene incluido con Node.js)* | Gestor de paquetes para descargar e instalar las dependencias del proyecto. | `npm -v` |
+| **Angular CLI** *(Opcional)* | **v18+** / **v22+** | Herramienta de línea de comandos de Angular (no es obligatoria si usas los scripts de `npm`). | `ng version` o `npx ng version` |
+| **Git** | Cualquier versión reciente | Para clonar el repositorio de control de versiones. | `git --version` |
+| **Navegador Web** | Moderno *(Chrome, Edge, Firefox, Brave o Safari)* | Para visualizar y navegar la aplicación en entorno local. | Abrir navegador preferido |
+
+> [!TIP]
+> Si aún no tienes **Node.js** instalado, descárgalo directamente desde el sitio oficial: [https://nodejs.org/](https://nodejs.org/) (se recomienda elegir la versión **LTS**).
+
+---
+
+### 📋 Paso a Paso para Ejecutar el Proyecto
+
+#### Paso 1: Clonar el Repositorio
+Abre tu terminal favorita (PowerShell, Git Bash, CMD o Terminal de VS Code) y clona el repositorio:
+
 ```bash
 git clone https://github.com/cr1c4rd0/FRONTEND-GRUPO26-POLI.git
 cd FRONTEND-GRUPO26-POLI
 ```
 
-### 2. Instalar Dependencias
+*(Si ya descargaste el proyecto como archivo ZIP, descomprímelo y abre la terminal dentro de la carpeta raíz `FRONTEND-GRUPO26-POLI`)*.
+
+---
+
+#### Paso 2: Instalar las Dependencias
+Ejecuta el siguiente comando para descargar todas las librerías necesarias especificadas en el `package.json` (`@angular/core`, `@angular/router`, `@angular/forms`, Bootstrap, TypeScript, etc.):
+
 ```bash
 npm install
 ```
 
-### 3. Iniciar Servidor de Desarrollo
+> [!NOTE]
+> Este proceso toma entre 20 y 60 segundos dependiendo de la velocidad de tu conexión a internet. Una vez finalizado, se creará la carpeta `node_modules/`.
+
+---
+
+#### Paso 3 (Opcional): Desactivar la Analítica de Angular
+La primera vez que uses Angular CLI en tu máquina, es posible que te pregunte si deseas enviar estadísticas de uso a Google. Si deseas evitar este mensaje interactivo, ejecuta:
+
 ```bash
-npm start
-# O alternativamente:
-# ng serve
+npx ng analytics off
 ```
 
-Abre tu navegador y entra en:
-👉 **`http://localhost:4200/`**
+---
 
-La aplicación se recargará automáticamente ante cualquier modificación en el código.
+#### Paso 4: Iniciar el Servidor de Desarrollo
+Para compilar la aplicación y levantar el servidor web local con recarga en caliente (*Hot-Reload*), ejecuta:
 
-### 4. Compilar para Producción
+```bash
+npm start
+```
+*(O de manera equivalente: `npx ng serve` o `ng serve` si tienes Angular CLI instalado globalmente)*.
+
+Una vez que termine de compilar verás un mensaje como este:
+```text
+Application bundle generation complete.
+Watch mode enabled. Watching for file changes...
+  ➜  Local:   http://localhost:4200/
+```
+
+---
+
+#### Paso 5: Abrir la Aplicación en el Navegador
+Abre tu navegador web e ingresa a la siguiente URL:
+
+👉 **[http://localhost:4200/](http://localhost:4200/)**
+
+¡Listo! Ya puedes explorar el periódico digital, interactuar con el catálogo, marcar favoritos, usar el buscador dinámico, enviar formularios de contacto y gestionar noticias desde el panel de administración.
+
+---
+
+#### Paso 6: Compilar para Producción (Opcional)
+Si deseas generar los archivos optimizados y empaquetados para subir a un servidor web o hosting de producción:
+
 ```bash
 npm run build
 ```
-Los archivos optimizados y listos para despliegue se generarán en la carpeta `dist/synapse-tech`.
+
+Los artefactos listos para producción se generarán automáticamente en la carpeta:
+📁 **`dist/synapse-tech/`**
+
+---
+
+### 🛠️ Scripts Disponibles en `package.json`
+
+| Comando | Acción |
+| :--- | :--- |
+| `npm start` | Inicia el servidor de desarrollo en `http://localhost:4200/`. |
+| `npm run build` | Compila y optimiza la aplicación para producción en `dist/synapse-tech`. |
+| `npm run watch` | Compila en modo desarrollo y queda a la espera de cambios continuos. |
+
+---
+
+### ❓ Preguntas Frecuentes y Solución de Problemas (Troubleshooting)
+
+#### 1. ⚠️ Error: *"Port 4200 is already in use. Use '--port' to specify a different port."*
+Este error sucede cuando el puerto `4200` ya está siendo utilizado por otra pestaña, servidor o proceso en tu computadora.
+* **Solución rápida:** Ejecuta el servidor en un puerto diferente (por ejemplo, el 4201):
+  ```bash
+  npm start -- --port 4201
+  ```
+  O con `ng serve`:
+  ```bash
+  npx ng serve --port 4201
+  ```
+* **Solución alternativa:** Si la terminal te pregunta `Would you like to use a different port? (Y/n)`, simplemente escribe `Y` y presiona **Enter** para que Angular elija automáticamente un puerto disponible.
+
+#### 2. ⚠️ Error de directiva de ejecución en PowerShell en Windows: *"La ejecución de scripts está deshabilitada en este sistema"*
+Si al ejecutar comandos `ng` o `npm` en PowerShell recibes un error de `ExecutionPolicy`, ejecuta en la misma terminal:
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+Y vuelve a intentar `npm start`.
+
+#### 3. ⚠️ Deseo consultar la versión estática previa (Entrega 2 en HTML5 / Vanilla JS)
+El código de la entrega anterior se preserva intacto. No requiere NodeJS ni instalación. Simplemente abre con doble clic o tu navegador el archivo:
+📁 **[`legacy-entrega2/index.html`](./legacy-entrega2/index.html)**
 
 ---
 
