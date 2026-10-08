@@ -2,25 +2,24 @@
 
 > Aplicación web tipo periódico interactivo desarrollada por el **Grupo 26** para el proyecto académico de la asignatura **FRONTEND** en el **Politécnico Grancolombiano**.
 
-[![Estado del Proyecto](https://img.shields.io/badge/Entrega%202-Completada-brightgreen?style=for-the-badge)](#)
+[![Angular](https://img.shields.io/badge/Angular-v22-DD0031?style=for-the-badge&logo=angular&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
-[![Angular](https://img.shields.io/badge/Angular-Básico%20(Planeado)-DD0031?style=for-the-badge&logo=angular&logoColor=white)](#)
+[![Estado del Proyecto](https://img.shields.io/badge/Entrega%203-Migrado%20a%20Angular-brightgreen?style=for-the-badge)](#)
 
 ---
 
 ## 📋 Tabla de Contenidos
 
 - [Descripción del Proyecto](#-descripción-del-proyecto)
+- [Arquitectura en Angular](#-arquitectura-en-angular)
 - [Características Principales](#-características-principales)
-- [Diseño y Prototipado (UI/UX)](#-diseño-y-prototipado-uiux)
-- [Tecnologías Utilizadas](#️-tecnologías-utilizadas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Visualización y Puesta en Marcha](#-visualización-y-puesta-en-marcha)
-- [Integración con Backend](#-integración-con-backend)
-- [Flujo de Trabajo y Convenciones Git](#-flujo-de-trabajo-y-convenciones-git)
+- [Puesta en Marcha y Ejecución](#-puesta-en-marcha-y-ejecución)
+- [Diseño y Prototipado (UI/UX)](#-diseño-y-prototipado-uiux)
+- [Historial y Respaldo Entrega 2](#-historial-y-respaldo-entrega-2)
 - [Integrantes del Grupo 26](#-integrantes-del-grupo-26)
 - [Institución](#-institución)
 
@@ -28,69 +27,131 @@
 
 ## 📖 Descripción del Proyecto
 
-**SYNAPSE.TECH** es una plataforma web tipo periódico digital enfocada en el ecosistema tecnológico. Su objetivo es brindar a los usuarios un espacio moderno, intuitivo y dinámico donde puedan explorar las últimas novedades del mundo de la tecnología, tendencias de desarrollo, inteligencia artificial y servicios digitales.
+**SYNAPSE.TECH** es una plataforma web tipo periódico digital enfocada en el ecosistema tecnológico. Su objetivo es brindar a los usuarios un espacio moderno, intuitivo y reactivo donde puedan explorar las últimas novedades del mundo de la tecnología, inteligencia artificial, hardware, software, ciberseguridad y startups.
 
-La aplicación permite navegar entre diferentes artículos y categorías, visualizar información detallada de cada noticia e interactuar mediante funcionalidades clave como el guardado en favoritos y formularios de contacto. En esta etapa inicial, el proyecto se enfoca en evidenciar sólidos fundamentos de maquetación semántica con **HTML5**, diseño responsivo con **CSS3** apoyado en **Bootstrap 5.3** y dinamismo del lado del cliente con **JavaScript**, con una arquitectura orientada a la futura adopción y migración a **Angular**.
+El proyecto ha sido completamente migrado a **Angular**, implementando las prácticas modernas del ecosistema:
+- **Standalone Components** para una arquitectura modular y desacoplada sin `NgModule`.
+- **Angular Signals y Computed Signals** (`signal`, `computed`, `effect`) para reactividad de alto rendimiento.
+- **Angular Router** con enrutamiento dinámico, migas de pan y enlaces profundos (`/`, `/detalle/:id`, `/favoritos`, `/contacto`, `/admin`, `/perfil`).
+- **Reactive Forms** (`FormGroup`, `FormControl`, `Validators`) para validación y captura de datos en tiempo real.
+- **Persistencia en LocalStorage** para conservar noticias añadidas/editadas, favoritos y perfil del usuario.
+- **Diseño Cyber-Tech Moderno** con tema oscuro nativo, gradientes neon, fuentes *Space Grotesk* e *Inter*, y microanimaciones fluidas.
 
 ---
 
-## ✨ Características Principales
+## ⚙️ Arquitectura en Angular
 
-### 1. 📰 Visualización de Noticias (Catálogo)
-Los usuarios disponen de un catálogo dinámico presentado en formato de tarjetas (*cards*), donde cada elemento incluye:
-- **Imagen:** Recurso visual representativo de la noticia o avance tecnológico.
-- **Nombre / Título:** Encabezado descriptivo de la noticia.
-- **Descripción breve:** Resumen introductorio del contenido.
-- **Botón de acción:** Enlace directo (*"Ver más"*) hacia la vista de detalle.
+El proyecto se estructura bajo una arquitectura limpia y desacoplada:
 
-### 2. 🔍 Detalle de la Noticia
-Vista individual y profunda para cada artículo que presenta:
-- **Información completa:** Contenido íntegro de la noticia y datos contextuales.
-- **Imagen representativa:** Cabecera o galería visual en alta definición.
-- **Botones de interacción:** Opciones para añadir el artículo a favoritos o navegar hacia el formulario de contacto.
+1. **Modelos (`src/app/models/`):**
+   - [`news.model.ts`](file:///src/app/models/news.model.ts): Interfaces TypeScript con tipado fuerte para `NewsItem`, `Author`, `KeyFact`, `UserProfile` y `ContactMessage`.
 
-### 3. ⭐ Gestión de Favoritos (Interacción del Usuario)
-Espacio personalizado donde los usuarios pueden interactuar con el contenido:
-- **Guardar en favoritos:** Marcado dinámico de artículos de interés desde las cards o la vista de detalle.
-- **Lista personalizada:** Consulta de la colección de noticias favoritas guardadas.
-- **Persistencia en el cliente:** Implementado mediante `localStorage` o `sessionStorage` para conservar las selecciones sin necesidad de base de datos externa.
+2. **Servicios (`src/app/services/`):**
+   - [`news.service.ts`](file:///src/app/services/news.service.ts): Servicio singleton reactivo (`@Injectable({ providedIn: 'root' })`) que gestiona el catálogo de noticias, favoritos y perfil con **Angular Signals** (`signal<NewsItem[]>`, `signal<string[]>`, `signal<UserProfile>`). Incluye operaciones CRUD completas y persistencia sincronizada con `localStorage`.
+   - [`toast.service.ts`](file:///src/app/services/toast.service.ts): Notificaciones emergentes dinámicas y reactivas (`success`, `error`, `info`).
 
-### 4. 🏠 Página de Inicio (Home)
-Estructura de aterrizaje completa y moderna compuesta por:
-- **Header:** Menú de navegación accesible e intuitivo.
-- **Sección de bienvenida:** Mensaje de introducción y propuesta de valor de SYNAPSE.TECH.
-- **Noticias destacadas:** Vitrina principal con los artículos más relevantes del momento.
-- **Llamados a la acción (Call-to-Action):** Botones orientados a explorar el catálogo, guardar favoritos o contactar.
-- **Footer:** Pie de página con información general del proyecto, enlaces institucionales y créditos.
+3. **Componentes Globales (`src/app/components/`):**
+   - [`HeaderComponent`](file:///src/app/components/header/header.component.ts): Barra de navegación accesible con contador dinámico de favoritos, enlaces activos (`routerLinkActive`) y disparador de búsqueda.
+   - [`FooterComponent`](file:///src/app/components/footer/footer.component.ts): Pie de página institucional categorizado.
+   - [`NewsCardComponent`](file:///src/app/components/news-card/news-card.component.ts): Tarjeta modular reutilizable con insignia de categoría, botón interactivo de favoritos y navegación a detalle.
+   - [`SearchModalComponent`](file:///src/app/components/search-modal/search-modal.component.ts): Buscador dinámico flotante con filtrado en tiempo real.
+   - [`ToastComponent`](file:///src/app/components/toast/toast.component.ts): Contenedor de avisos y notificaciones en pantalla.
 
-### 5. ✉️ Página de Contacto
-Canal de comunicación que incluye un formulario interactivo con:
-- **Validaciones básicas:** Verificación en tiempo real de campos obligatorios y formato de correo electrónico válido.
-- **Mensaje de confirmación:** Notificación visual al usuario tras el envío exitoso del formulario.
+4. **Páginas / Vistas (`src/app/pages/`):**
+   - [`HomeComponent`](file:///src/app/pages/home/home.component.ts): Portada con noticia destacada (Hero Section), pills de filtrado por categoría y catálogo dinámico.
+   - [`DetailComponent`](file:///src/app/pages/detail/detail.component.ts): Lectura profunda del artículo mediante parámetros de ruta (`/detalle/:id`), barra de autor, citas destacadas, datos clave en barra lateral y 3 artículos relacionados.
+   - [`FavoritesComponent`](file:///src/app/pages/favorites/favorites.component.ts): Colección personalizada del usuario con estado vacío (Empty State) y alternancia rápida.
+   - [`ContactComponent`](file:///src/app/pages/contact/contact.component.ts): Formulario con **Reactive Forms**, validaciones visuales instantáneas y confirmación de envío.
+   - [`AdminComponent`](file:///src/app/pages/admin/admin.component.ts): Panel administrativo con **Mini CRUD** (Crear, Editar, Eliminar con modal interactivo de confirmación) y **Vista Previa en Vivo** de la tarjeta.
+   - [`ProfileComponent`](file:///src/app/pages/profile/profile.component.ts): Perfil del lector, estadísticas personales y edición interactiva de avatar e información.
 
-### 6. ⚙️ Gestión Básica de Noticias (Mini CRUD)
-Panel o funcionalidad administrativa básica que permite mantener actualizado el catálogo:
-- **Crear nuevas noticias:** Formulario para agregar nuevos artículos con su respectivo título, descripción, imagen y contenido, incluyendo confirmación visual de publicación exitosa.
-- **Editar noticias existentes:** Capacidad de modificar datos de artículos y confirmar los cambios guardados.
-- **Eliminar noticias existentes:** Diálogo/modal interactivo de confirmación para remover noticias del catálogo activo.
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+FRONTEND-GRUPO26-POLI/
+├── angular.json                    # Configuración del CLI de Angular
+├── package.json                    # Dependencias y scripts de ejecución
+├── tsconfig.json                   # Configuración del compilador TypeScript
+├── public/                         # Archivos estáticos y recursos públicos
+│   └── data/
+│       └── news.json               # Semilla inicial del catálogo de noticias
+├── src/
+│   ├── index.html                  # HTML raíz con Bootstrap 5.3 y Google Fonts
+│   ├── main.ts                     # Punto de entrada de la aplicación Angular
+│   ├── styles.css                  # Sistema de diseño, tokens CSS, dark theme y animaciones
+│   └── app/
+│       ├── app.component.ts        # Componente raíz con layout y router-outlet
+│       ├── app.component.html      # Plantilla principal (<app-header />, <router-outlet />, etc.)
+│       ├── app.config.ts           # Configuración de enrutamiento y providers
+│       ├── app.routes.ts           # Definición de rutas del Angular Router
+│       ├── models/
+│       │   └── news.model.ts       # Modelos e interfaces TypeScript
+│       ├── services/
+│       │   ├── news.service.ts     # Servicio de catálogo, CRUD, favoritos y localStorage
+│       │   └── toast.service.ts    # Servicio de notificaciones flotantes
+│       ├── components/
+│       │   ├── header/             # Barra de navegación principal
+│       │   ├── footer/             # Pie de página institucional
+│       │   ├── news-card/          # Tarjetas dinámicas de noticias
+│       │   ├── search-modal/       # Modal de búsqueda interactiva
+│       │   └── toast/              # Alertas toast flotantes
+│       └── pages/
+│           ├── home/               # Vista de inicio y catálogo
+│           ├── detail/             # Vista de detalle de artículo
+│           ├── favorites/          # Biblioteca de noticias guardadas
+│           ├── contact/            # Formulario de contacto reactivo
+│           ├── admin/              # Panel de administración (Mini CRUD)
+│           └── profile/            # Perfil de usuario y preferencias
+├── legacy-entrega2/                # Respaldo intacto de la Entrega 2 (HTML5 / Vanilla JS)
+├── docs/                           # Documentación académica e informes
+├── PROTOTIPO/                      # Prototipos y mockups UI/UX de la Entrega 1
+└── README.md                       # Documentación técnica general
+```
+
+---
+
+## 🚀 Puesta en Marcha y Ejecución
+
+### Prerrequisitos
+- **Node.js**: v18 o superior (recomendado v20+ o v24 LTS).
+- **npm**: v9 o superior.
+
+### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/cr1c4rd0/FRONTEND-GRUPO26-POLI.git
+cd FRONTEND-GRUPO26-POLI
+```
+
+### 2. Instalar Dependencias
+```bash
+npm install
+```
+
+### 3. Iniciar Servidor de Desarrollo
+```bash
+npm start
+# O alternativamente:
+# ng serve
+```
+
+Abre tu navegador y entra en:
+👉 **`http://localhost:4200/`**
+
+La aplicación se recargará automáticamente ante cualquier modificación en el código.
+
+### 4. Compilar para Producción
+```bash
+npm run build
+```
+Los archivos optimizados y listos para despliegue se generarán en la carpeta `dist/synapse-tech`.
 
 ---
 
 ## 🎨 Diseño y Prototipado (UI/UX)
 
-La concepción visual y el flujo de navegación de la aplicación fueron planificados previamente en la carpeta [`PROTOTIPO/`](./PROTOTIPO), asegurando coherencia visual y una óptima experiencia de usuario.
-
-### ✒️ Herramienta Utilizada: [Pen (pen.dev)](https://www.pen.dev/)
-Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó **[Pen](https://www.pen.dev/)**, una herramienta moderna, minimalista y colaborativa de diseño de interfaces y prototipado rápido enfocada en desarrolladores y diseñadores. 
-
-**Características destacadas de Pen:**
-- **Enfoque ágil:** Permite bosquejar interfaces, componentes y flujos de usuario de manera limpia y sin sobrecargas complejas.
-- **Formato `.pen` nativo:** Almacena todos los lienzos, capas y elementos de diseño en un archivo único y ligero (`.pen`), ideal para versionar directamente en repositorios Git.
-- **Exportación de alta fidelidad:** Facilita la generación de vistas y maquetas en formatos de imagen estándar como PNG para documentación y presentación.
-
-### 📐 Archivos y Vistas del Prototipo
-- **Archivo editable:** [`PROTOTIPO/Prototipo - SYNAPSE.TECH.pen`](./PROTOTIPO/Prototipo%20-%20SYNAPSE.TECH.pen) — Archivo fuente con el diseño completo realizado en **Pen**.
-- **Vistas exportadas:** Disponibles en alta resolución dentro de [`PROTOTIPO/EXPORTADOS/`](./PROTOTIPO/EXPORTADOS/):
+La aplicación sigue fielmente los diseños planificados en la Entrega 1 en la carpeta [`PROTOTIPO/`](./PROTOTIPO) elaborados en **[Pen (pen.dev)](https://www.pen.dev/)**:
 
 | Módulo / Vista | Archivo Exportado | Descripción |
 | :--- | :--- | :--- |
@@ -109,95 +170,12 @@ Para la elaboración de las vistas y wireframes de **SYNAPSE.TECH** se utilizó 
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🗄️ Historial y Respaldo Entrega 2
 
-- **HTML5:** Marcado semántico para la estructuración accesible de las páginas y artículos.
-- **CSS3:** Estilos visuales modernos, diseño responsivo, transiciones y variables CSS.
-- **JavaScript (Vanilla / ES6+):** Programación del comportamiento dinámico del cliente, manipulación del DOM y gestión de eventos.
-- **Bootstrap 5.3:** Framework CSS elegido para el proyecto; aporta sistema de grillas, componentes listos (navbar, cards, forms, modales) y utilidades responsivas, incluyendo soporte nativo para modo oscuro/claro.
-- **Angular (Fase Posterior):** Uso de fundamentos básicos que incluyen arquitectura de componentes y data binding (enlace de datos unidireccional y bidireccional).
-- **localStorage / sessionStorage:** Mecanismos de almacenamiento web para la persistencia local de información del usuario (noticias favoritas, sesión y preferencias).
-- **JSON Local:** Archivos locales en formato JSON para el almacenamiento, estructuración y consumo simulado de datos de noticias y categorías.
-- **Herramientas de Diseño y Control de Versiones:**
-  - **[Pen (pen.dev)](https://www.pen.dev/):** Herramienta de diseño para la creación del prototipo y wireframes UI/UX (`.pen`).
-  - **Git & GitHub:** Control de versiones distribuido y flujo de trabajo en equipo.
+Para fines de evaluación docente y trazabilidad académica, el código original de la **Entrega 2** (HTML5 estático, Vanilla JS y Bootstrap 5.3 puro) se conserva 100% íntegro dentro de la carpeta:
+📁 **[`legacy-entrega2/`](./legacy-entrega2/)**
 
----
-
-## 📂 Estructura del Proyecto
-
-```text
-FRONTEND-GRUPO26-POLI/
-├── index.html                      # Vista principal / Home con catálogo dinámico
-├── detalle.html                    # Vista de detalle de noticia (?id=NEWS-XX)
-├── favoritos.html                  # Biblioteca personalizada de noticias guardadas
-├── contacto.html                   # Formulario con validación JS y confirmación
-├── admin.html                      # Mini CRUD (crear, editar, eliminar, previsualizar)
-├── perfil.html                     # Perfil de usuario y preferencias de lectura
-├── css/
-│   └── styles.css                  # Sistema de diseño, tokens, dark theme y animaciones
-├── js/
-│   ├── storage.js                  # Persistencia localStorage y semilla/fallback
-│   └── app.js                      # Lógica global, tarjetas dinámicas, toast y búsqueda
-├── data/
-│   └── news.json                   # Catálogo de noticias para consumo dinámico
-├── docs/
-│   ├── INFORME_ENTREGA_2_GRUPO26.pdf # Informe académico en formato APA 7ma edición
-│   ├── informe_entrega_2.html      # Fuente HTML maquetada del informe
-│   └── capturas/                   # Capturas de alta resolución de las vistas
-├── PROTOTIPO/                      # Material de diseño de la Entrega 1
-│   ├── EXPORTADOS/                 # Mockups de referencia en PNG (12 pantallas)
-│   └── Prototipo - SYNAPSE.TECH.pen # Archivo fuente editable en Penpot/Pen
-└── README.md                       # Documentación técnica general
-```
-
----
-
-## 🚀 Visualización y Puesta en Marcha (Autonomía Local)
-
-La aplicación ha sido desarrollada para operar de forma 100% autónoma en cualquier navegador sin necesidad de servidores backend, NodeJS ni bases de datos:
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/cr1c4rd0/FRONTEND-GRUPO26-POLI.git
-   cd FRONTEND-GRUPO26-POLI
-   ```
-
-2. **Ejecución directa en el navegador:**
-   - Haz doble clic sobre `index.html` o ábrelo directamente en tu navegador preferido (Google Chrome, Microsoft Edge, Mozilla Firefox o Safari).
-   - Puedes interactuar con el catálogo, filtrar por temas, guardar favoritos, enviar el formulario de contacto y crear/editar/eliminar noticias desde el módulo de administración (`admin.html`).
-
-3. **Ejecución con servidor estático local (opcional):**
-   - Con **Live Server** de VS Code: Clic derecho en `index.html` -> *Open with Live Server*.
-   - Con Python: `python -m http.server 8080` y abrir `http://localhost:8080`.
-
-4. **Documento de Entrega (Normas APA 7ma Edición):**
-   - El informe académico completo se encuentra disponible en formato PDF en [`docs/INFORME_ENTREGA_2_GRUPO26.pdf`](./docs/INFORME_ENTREGA_2_GRUPO26.pdf).
-
----
-
-## 🔄 Integración con Backend
-
-- **Repositorio Backend:** `[Pendiente de integración]`
-- **Documentación API:** `[Enlace a Swagger / Postman / Endpoints futuros]`
-
----
-
-## 🌿 Flujo de Trabajo y Convenciones Git
-
-Para mantener una integración fluida y ordenada:
-
-- `main`: Rama principal de producción / entregas finales.
-- `develop`: Rama de integración activa.
-- `feature/<nombre>`: Desarrollo de nuevas características (ej: `feature/login-jwt`).
-- `fix/<nombre>`: Corrección de fallos (ej: `fix/layout-overflow`).
-
-### Convención de Commits (Conventional Commits)
-- `feat:` Nueva funcionalidad añadida.
-- `fix:` Corrección de errores.
-- `docs:` Modificaciones en documentación.
-- `style:` Cambios de estilos o formato sin alterar lógica.
-- `refactor:` Mejoras de código que no cambian funcionalidad.
+Puede ejecutarse de forma estática en cualquier navegador abriendo directamente [`legacy-entrega2/index.html`](./legacy-entrega2/index.html).
 
 ---
 
