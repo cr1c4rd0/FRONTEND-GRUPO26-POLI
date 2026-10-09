@@ -20,6 +20,7 @@
 - [Guía de Ejecución y Requisitos del Sistema](#-guía-de-ejecución-y-requisitos-del-sistema)
 - [Diseño y Prototipado (UI/UX)](#-diseño-y-prototipado-uiux)
 - [Historial y Respaldo Entrega 2](#-historial-y-respaldo-entrega-2)
+- [Documentación e Informes Académicos (docs/)](#-documentación-e-informes-académicos-docs)
 - [Integrantes del Grupo 26](#-integrantes-del-grupo-26)
 - [Institución](#-institución)
 
@@ -272,6 +273,23 @@ Para fines de evaluación docente y trazabilidad académica, el código original
 📁 **[`legacy-entrega2/`](./legacy-entrega2/)**
 
 Puede ejecutarse de forma estática en cualquier navegador abriendo directamente [`legacy-entrega2/index.html`](./legacy-entrega2/index.html).
+
+---
+
+## 📚 Documentación e Informes Académicos (`docs/`)
+
+> [!NOTE]
+> La carpeta `docs/` contiene los entregables académicos formales bajo las **Normas APA (7ma Edición)** y se gestiona a nivel local (excluida del control de versiones mediante `.gitignore`) para la entrega directa de los archivos PDF en la plataforma institucional del Politécnico Grancolombiano.
+
+Los informes estructurados para cada fase se encuentran disponibles en:
+
+| Documento | Formato | Descripción |
+| :--- | :--- | :--- |
+| 📑 **[INFORME_ENTREGA_3_GRUPO26.pdf](./docs/ENTREGA_3/INFORME_ENTREGA_3_GRUPO26.pdf)** | **PDF Oficial** | **Informe Académico Final (Entrega 3 - Semana 7)**: Plataforma Web de Noticias en Angular SPA, Signals, Router, Reactive Forms y CRUD. |
+| 🌐 **[informe_entrega_3.html](./docs/ENTREGA_3/informe_entrega_3.html)** | **HTML Impresible** | Versión web del informe de Entrega 3 bajo APA 7 con botón para imprimir o guardar como PDF. |
+| 📝 **[INFORME_ENTREGA_3.md](./docs/ENTREGA_3/INFORME_ENTREGA_3.md)** | **Markdown** | Versión Markdown del informe final para lectura directa en GitHub. |
+| 📑 **[INFORME_ENTREGA_2_GRUPO26.pdf](./docs/ENTREGA_2/INFORME_ENTREGA_2_GRUPO26.pdf)** | **PDF Oficial** | **Informe Académico de la Entrega 2 (Semana 5)**: Prototipo funcional HTML5/JS nativo. |
+| 🌐 **[informe_entrega_2.html](./docs/ENTREGA_2/informe_entrega_2.html)** | **HTML Impresible** | Versión web interactiva del informe de la Entrega 2. |
 
 ---
 

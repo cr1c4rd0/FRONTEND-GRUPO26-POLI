@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/synapse-tech/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
